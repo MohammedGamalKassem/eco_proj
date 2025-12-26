@@ -1,0 +1,103 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}      
+\usepackage{booktabs}      % For professional horizontal rules
+\usepackage{tabularx}      % For auto-width columns
+\usepackage{array}         
+\usepackage{caption}       
+
+% --- PAGE MARGINS ---
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% --- CUSTOM SETTINGS ---
+% Define a custom column 'L' for left-aligned, wrapped text
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+% FORCE TABLE NUMBERING TO START AT 17.1
+\renewcommand{\thetable}{17.\arabic{table}}
+\setcounter{table}{0} 
+
+\begin{document}
+
+\section*{Chapter 17: Strategic Marketing Control}
+
+% -----------------------------------------------------------
+% TABLE 17.1
+% -----------------------------------------------------------
+\begin{table}[htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.5} 
+    \caption{Balanced Scorecard for Ferrari Marketing Control}
+    \label{tab:balanced_scorecard}
+    
+    \begin{tabularx}{\textwidth}{@{} >{\bfseries}l L L @{}}
+        \toprule
+        Perspective & \textbf{Objectives} & \textbf{Measures / Targets} \\ 
+        \midrule
+        
+        Financial & 
+        Protect premium margins; grow value of services. & 
+        Maintain/increase EBIT margin; 15\% growth in revenue from ``Tailor Made'' and Bespoke services [4, 5]. \\ 
+        \addlinespace
+        
+        Customer & 
+        Increase brand loyalty and community advocacy. & 
+        $>$80\% repeat purchase rate; Net Promoter Score (NPS) above 70; 20\% growth in official club memberships [4, 5]. \\ 
+        \addlinespace
+        
+        Internal Process & 
+        Improve customer journey consistency and digital integration. & 
+        $<$24-hour response time for dealer leads; 100\% compliance with global retail experience standards [4, 5]. \\ 
+        \addlinespace
+        
+        Learning \& Innovation & 
+        Strengthen digital capabilities and sustainability engineering. & 
+        Completion of digital clienteling training for all sales staff; achievement of key hybrid/EV technology milestones [4, 5]. \\ 
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\vspace{1cm}
+
+% -----------------------------------------------------------
+% TABLE 17.2
+% -----------------------------------------------------------
+\begin{table}[htbp]
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.5}
+    \caption{Marketing and Strategic Risk Register}
+    \label{tab:risk_register}
+    
+    \begin{tabularx}{\textwidth}{@{} >{\bfseries}l c c L @{}}
+        \toprule
+        Risk Event & \textbf{Likelihood} & \textbf{Impact} & \textbf{Mitigation Strategy} \\ 
+        \midrule
+        
+        Brand Dilution & 
+        Medium & High & 
+        Strict scarcity discipline; rigorous partnership and licensing governance; consistent global retail standards [7]. \\ 
+        \addlinespace
+        
+        Cyber/Privacy Incident & 
+        Low & High & 
+        Implementation of ``Privacy-by-Design''; regular security audits of CRM and owner portals; incident response protocols [7]. \\ 
+        \addlinespace
+        
+        Regulatory Shift & 
+        High & High & 
+        Accelerated R\&D in electrification; proactive technology roadmapping; framing sustainability as ``engineering excellence'' [7]. \\ 
+        \addlinespace
+        
+        Macroeconomic Downturn & 
+        Medium & Medium & 
+        Geographic diversification of sales; strengthening counter-cyclical revenue streams (aftersales and experiences) [7]. \\ 
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\end{document}

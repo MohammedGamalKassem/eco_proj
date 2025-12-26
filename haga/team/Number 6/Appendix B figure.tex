@@ -1,0 +1,118 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shadows, calc}
+
+% --- LANDSCAPE MODE ---
+\geometry{landscape, margin=1cm}
+
+\begin{document}
+
+\section*{Ferrari Strategic Ecosystem Map}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        % GLOBAL SETTINGS
+        node distance=1.5cm and 1.2cm,
+        stage/.style={
+            rectangle, 
+            draw=red!80!black, 
+            ultra thick, 
+            fill=white, 
+            text width=6.2cm,
+            minimum height=5.2cm, % Slightly taller to fit the new data comfortably
+            align=left,
+            font=\small, 
+            drop shadow={opacity=0.2, shadow xshift=3pt, shadow yshift=-3pt},
+            rounded corners=4pt,
+            inner sep=10pt
+        },
+        arrow/.style={-{Stealth[scale=1.5]}, red!80!black, ultra thick, rounded corners=5pt}
+    ]
+
+    % --- ROW 1: PRE-PURCHASE ---
+    \node (aware) [stage] {
+        \textbf{\large 1. AWARENESS}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Symbolic Utility \& Racing Heritage\\
+        $\bullet$ \textbf{Touchpoints:} F1 Scuderia, Global PR, Brand Mythology\\
+        $\bullet$ \textbf{Metric:} Cultural Visibility \& Awareness\\[10pt]
+        \textit{\scriptsize Ref: Ch 2.1.1, 7.2}
+    };
+
+    \node (consid) [stage, right=of aware] {
+        \textbf{\large 2. CONSIDERATION}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Digital Storytelling \& Info Asymmetry\\
+        $\bullet$ \textbf{Touchpoints:} 3D Configurator, Website, Landing Pages\\
+        $\bullet$ \textbf{Metric:} Engagement Depth \& Lead Quality\\[10pt]
+        \textit{\scriptsize Ref: Ch 5.2, 12.2}
+    };
+
+    \node (acq) [stage, right=of consid] {
+        \textbf{\large 3. ACQUISITION}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Scarcity \& Monopolistic Competition\\
+        $\bullet$ \textbf{Touchpoints:} Client Advisor, ``Tailor Made'', Waitlists\\
+        $\bullet$ \textbf{Metric:} Margin Protection \& Customisation Rev.\\[10pt]
+        \textit{\scriptsize Ref: Ch 9.2, 14.1}
+    };
+
+    % --- ROW 2: POST-PURCHASE ---
+    \node (deliv) [stage, below=of acq] {
+        \textbf{\large 4. DELIVERY}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Physical Evidence \& Process Quality\\
+        $\bullet$ \textbf{Touchpoints:} Factory Ceremony, Handover Rituals\\
+        $\bullet$ \textbf{Metric:} Satisfaction Score \& Advocacy Intent\\[10pt]
+        \textit{\scriptsize Ref: Appx A.7, 13.2}
+    };
+
+    \node (own) [stage, left=of deliv] {
+        \textbf{\large 5. OWNERSHIP}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Relationship Marketing (Exp. Economy)\\
+        $\bullet$ \textbf{Touchpoints:} Corse Clienti, Owner Clubs, Classiche\\
+        $\bullet$ \textbf{Metric:} Service Cycle \& Community Engagement\\[10pt]
+        \textit{\scriptsize Ref: Ch 11.4.4, 16.2}
+    };
+
+    \node (repur) [stage, left=of own] {
+        \textbf{\large 6. REPURCHASE}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Brand Equity \& CLV\\
+        $\bullet$ \textbf{Touchpoints:} Icona/Limited Series Invites, Allocation\\
+        $\bullet$ \textbf{Metric:} Repeat Purchase \& Resale Value\\[10pt]
+        \textit{\scriptsize Ref: Ch 12.3, Rec R1}
+    };
+
+    % --- ARROWS ---
+    \draw [arrow] (aware) -- (consid);
+    \draw [arrow] (consid) -- (acq);
+    \draw [arrow] (acq) -- (deliv);
+    \draw [arrow] (deliv) -- (own);
+    \draw [arrow] (own) -- (repur);
+
+    % --- THE ELEVATED LOOP ---
+    % 1. Go West from Repurchase
+    % 2. Go UP to a point 1.8cm HIGHER than the top of Acquisition
+    % 3. Go Right across the top
+    % 4. Drop Down into Acquisition
+    \draw [arrow, dashed] (repur.west) 
+        -- ++(-1.0, 0)                  % Move left slightly
+        |- ($(acq.north) + (0, 1.8)$)   % Go WAY UP (1.8cm above the box)
+        -| (acq.north);                 % Go Right then Drop Down
+
+    % --- LOOP LABEL ---
+    % Placed clearly on the top line
+    \node [fill=white, draw=red!80!black, font=\bfseries\scriptsize, rounded corners] 
+        at ($(consid.north) + (0, 1.8)$) {LOYALTY ALLOCATION MECHANISM};
+
+    \end{tikzpicture}
+\end{figure}
+
+\end{document}

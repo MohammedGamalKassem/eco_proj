@@ -1,0 +1,124 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}      
+\usepackage{booktabs}      % Professional tables
+\usepackage{tabularx}      % Auto-width columns
+\usepackage{array}         % Custom column definitions
+\usepackage{caption}       % Better caption formatting
+\usepackage{enumitem}      % REQUIRED: For compact lists inside tables
+
+% --- PAGE MARGINS ---
+\geometry{left=2.0cm, right=2.0cm, top=2.5cm, bottom=2.5cm} % Slightly wider margins for this dense table
+
+% --- CUSTOM SETTINGS ---
+% Define 'L' column: Flexible width, Left aligned, No justification (ragged right)
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+% FORCE TABLE NUMBERING TO B.1
+\renewcommand{\thetable}{B.\arabic{table}}
+\setcounter{table}{0} 
+
+\begin{document}
+% -----------------------------------------------------------
+% TABLE B.1: DETAILED CUSTOMER JOURNEY
+% -----------------------------------------------------------
+\begin{table}[htbp]
+    \centering
+    \footnotesize % Reduces font size to fit the dense content
+    \renewcommand{\arraystretch}{1.4} % Adds vertical breathing room
+    \caption{Detailed Customer Journey Map and Strategic Touchpoints for Ferrari}
+    \label{tab:customer_journey_expanded}
+    
+    % Table Structure:
+    % Col 1: Bold, fits content
+    % Cols 2, 3, 4: Share the remaining page width equally
+    \begin{tabularx}{\textwidth}{@{} >{\bfseries}l L L L @{}}
+        \toprule
+        Stage & \textbf{Customer Goals \& Motivations} & \textbf{Key Touchpoints \& Channels} & \textbf{Strategic Metrics \& Risks} \\ 
+        \midrule
+        
+        Awareness & 
+        Discover brand meaning, racing heritage, and identity signaling [4, 7]. & 
+        \begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
+            \item F1 Racing and Motorsport achievements [2, 3].
+            \item Official Website (Storytelling/Heritage) [1].
+            \item Global PR (Design awards/Product reveals) [2, 8].
+            \item Social Media (Racing/Lifestyle content) [9].
+        \end{itemize} & 
+        \textbf{Metrics:} Global reach, brand sentiment, cultural visibility [3, 10]. \par
+        \vspace{0.3em}
+        \textbf{Risks:} Brand dilution through overexposure; loss of racing credibility [3, 11]. \\ 
+        \addlinespace
+        
+        Consideration & 
+        Evaluate model fit, performance specs, and access levels [3, 12]. & 
+        \begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
+            \item Online Digital Configurator and Model Pages [1, 9].
+            \item Initial Dealer Contact and Showroom Visits [3].
+            \item Exclusive Private Events and Factory content [1, 2].
+            \item Personalised Account/Digital Services [9, 13].
+        \end{itemize} & 
+        \textbf{Metrics:} Qualified lead rate, engagement depth, lead response time [14, 15]. \par
+        \vspace{0.3em}
+        \textbf{Risks:} Inconsistent dealer response; website UX friction [12, 15]. \\ 
+        \addlinespace
+        
+        Acquisition & 
+        Secure vehicle allocation and finalize bespoke contracts [3, 6]. & 
+        \begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
+            \item One-on-one Client Advisor consultations [2, 6].
+            \item ``Tailor Made'' or Atelier Bespoke sessions [13, 16].
+            \item Financing, Warranty, and Service Contracts [6].
+            \item Allocation status and Waitlist management [17, 18].
+        \end{itemize} & 
+        \textbf{Metrics:} Conversion rate (lead to deposit); revenue from customization [15]. \par
+        \vspace{0.3em}
+        \textbf{Risks:} Perceived unfairness in allocation; compliance/legal errors [6, 19]. \\ 
+        \addlinespace
+        
+        Delivery & 
+        Celebrate ownership entry and join the exclusive community [6]. & 
+        \begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
+            \item Factory Delivery Ceremony (Maranello) [6, 20].
+            \item Local Showroom Handover and Onboarding [6, 20].
+            \item Ownership Rituals (Artifacts/packaging) [20].
+            \item Official Factory Tours and Museum access [6, 13].
+        \end{itemize} & 
+        \textbf{Metrics:} Initial satisfaction score; Advocacy intent [6]. \par
+        \vspace{0.3em}
+        \textbf{Risks:} Physical evidence mismatch (showroom quality); poor ceremony execution [21]. \\ 
+        \addlinespace
+        
+        Ownership & 
+        Maintain performance and deepen the relationship via experiences [6, 22]. & 
+        \begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
+            \item Certified Pre-owned and Aftersales [6, 13].
+            \item Official Owner Clubs and Track Days [6, 13].
+            \item Digital Support Portals and CRM personalization [6, 9].
+            \item Curated Travel and Lifestyle events [6, 23].
+        \end{itemize} & 
+        \textbf{Metrics:} Retention rate; service cycle time; digital adoption rate [6, 14, 15]. \par
+        \vspace{0.3em}
+        \textbf{Risks:} Cyber/Privacy incident (CRM data); service quality variance [6, 19]. \\ 
+        \addlinespace
+        
+        Repurchase & 
+        Upgrade collection and secure limited series access [6, 16]. & 
+        \begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
+            \item Exclusive Invitations to Limited Series [6, 16].
+            \item Loyalty-based allocation programs [6, 16].
+            \item Relationship-marketing driven by CRM data [16, 24].
+            \item High-touch invitations to special events [6].
+        \end{itemize} & 
+        \textbf{Metrics:} Repeat purchase rate; Customer Lifetime Value (CLV) [6, 14]. \par
+        \vspace{0.3em}
+        \textbf{Risks:} Frustrated demand (waiting lists); loss of loyalty due to poor stewardship [25, 26]. \\ 
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\end{document}
