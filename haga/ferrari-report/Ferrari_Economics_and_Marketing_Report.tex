@@ -22,6 +22,17 @@
 \setlength{\parskip}{0.6em}
 \setlength{\parindent}{0pt}
 
+% --- REQUIRED PACKAGES(sharaf) ---
+\usepackage{longtable} % <--- ADD THIS for the multi-page table
+\usepackage{fontspec}      % Standard for XeLaTeX
+\usepackage{booktabs}      % Professional tables
+\usepackage{tabularx}      % Auto-width columns
+\usepackage{array}         % Custom column definitions
+\usepackage{caption}       % Better caption formatting
+\usepackage{enumitem}      % For compact lists inside tables
+\usepackage{tikz}          % For the diagram
+\usetikzlibrary{arrows.meta, positioning, shadows, calc, decorations.pathreplacing}
+
 % ---------- Visual identity (Ferrari-inspired, restrained) ----------
 \usepackage{xcolor}
 \definecolor{Charcoal}{RGB}{28,28,28}
@@ -29,6 +40,24 @@
 \definecolor{Ivory}{RGB}{250,248,242}
 \definecolor{FerrariRed}{RGB}{200,16,46}
 \color{Charcoal}
+
+%----------- listings (for code snippets, if needed) ----------
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\lstset{
+    language=Matlab,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny,
+    frame=single,
+    breaklines=true,
+    captionpos=b
+}
 
 % ---------- Figures, tables, and floats ----------
 \usepackage{graphicx}
@@ -227,7 +256,7 @@ This report does not rely on proprietary internal data. Quantitative claims (e.g
 % Placeholder
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.5\textwidth]{../team/1.1.jpg}
+  \includegraphics[width=0.8\textwidth]{../team/1.1.jpg}
 %\FerrariPlaceholder{[Figure 1: Research Framework Linking Economics and Marketing Concepts to Ferrari]}
 \caption{Conceptual framework of the study (placeholder).}
 \end{figure}
@@ -354,8 +383,9 @@ A simplified representation of Ferrari's structure can be described as:
 \end{itemize}
 
 \begin{figure}[H]
-\FerrariPlaceholder{[Figure 3: Ferrari Organizational Structure (High-Level Placeholder)]}
-\caption{Organizational structure placeholder (to be replaced by a diagram).}
+  \includegraphics[width=0.8\textwidth]{../team/4.1.png}
+%\FerrariPlaceholder{[Figure 3: Ferrari Organizational Structure (High-Level Placeholder)]}
+\caption{Organizational structure placeholder .}
 \end{figure}
 
 \section{Management Hierarchy and Decision Rights}
@@ -363,16 +393,27 @@ Ferrari's strategy likely requires balancing centralized brand control with regi
 
 \begin{table}[H]
 \centering
-\caption{Illustrative decision-rights matrix for a luxury automotive firm (placeholder).}
-\begin{tabularx}{0.95\textwidth}{@{}p{0.25\textwidth}X@{}}
+\caption{Illustrative decision-rights matrix for a luxury automotive firm.}
+\begin{tabularx}{0.95\textwidth}{@{}p{0.25\textwidth}p{0.28\textwidth}p{0.16\textwidth}X@{}}
 \toprule
-\textbf{Decision area} & \textbf{Likely ownership and rationale}\\
+    extbf{Decision area} & \textbf{Likely owner} & \textbf{Centralization} & \textbf{Rationale}\\
 \midrule
-Brand identity and guidelines & Centralized to ensure global consistency and protect heritage.\\
-Product portfolio and volumes & Centralized; linked to scarcity management and long-term equity.\\
-Retail experience standards & Centralized standards with local adaptation; critical for luxury.\\
-Local events and partnerships & Regional proposals with central approval; protects reputation.\\
-Digital content governance & Centralized strategy with localized content; prevents fragmentation.\\
+Brand identity and visual guidelines & Corporate headquarters (Brand and Communications) & Highly centralized & Ensures global consistency, protects brand heritage, and preserves exclusivity, which is fundamental to luxury brand equity. \\
+
+Product portfolio and model volumes & Corporate headquarters (Top management and Product Strategy) & Highly centralized & Supports scarcity management, long-term brand value, and alignment with Ferrari’s innovation and performance strategy. \\
+
+Pricing corridors and margin targets & Corporate headquarters (Finance and Executive Management) & Centralized with limited regional input & Maintains premium positioning and pricing discipline while allowing minor adjustments for regulatory and fiscal differences. \\
+
+Retail experience standards & Corporate headquarters (Sales and Brand Experience) & Centralized standards, local implementation & Guarantees a uniform luxury customer journey worldwide while permitting cultural and regulatory adaptation. \\
+
+Local events and brand partnerships & Regional and local management & Decentralized execution with central approval & Enables responsiveness to local customer communities while protecting brand reputation and strategic coherence. \\
+
+Digital content and online communication & Corporate digital and marketing teams & Centralized strategy with localized content & Prevents fragmentation of brand messaging while ensuring relevance across regions and platforms. \\
+
+Customer relationship management (CRM) policies & Corporate headquarters (Digital and Data) & Centralized governance & Ensures consistent data standards, personalization quality, and compliance with global data protection regulations. \\
+
+After-sales service standards & Corporate headquarters (After-sales and Quality) & Centralized standards, regional execution & Maintains service excellence and customer satisfaction while leveraging local dealer capabilities. \\
+
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -418,81 +459,238 @@ While conversion may not mean direct purchase, it may mean collecting qualified 
 \caption{Website audit checklist (to be completed by the researcher).}
 \begin{tabularx}{0.95\textwidth}{@{}p{0.34\textwidth}X@{}}
 \toprule
-\textbf{Dimension} & \textbf{Evaluation notes / evidence (write observations)}\\
+\textbf{Dimension} & \textbf{Evaluation notes / evidence }\\
 \midrule
-Brand storytelling & [Observed storytelling elements, heritage content, racing linkage.]\\
-Product clarity & [Model info clarity, performance specs, configurator, comparisons.]\\
-UX and accessibility & [Mobile performance, readability, navigation, accessibility hints.]\\
-Lead generation & [Contact forms, dealer locator, appointment booking, CTAs.]\\
-Trust and credibility & [Corporate info, sustainability pages, press releases.]\\
+Brand storytelling & Assessment of heritage narratives, racing references, and emotional storytelling. \\
+Product clarity & Evaluation of model information clarity, specifications, configurator usability, and comparisons. \\
+UX and accessibility & Analysis of mobile performance, readability, navigation logic, and accessibility compliance. \\
+Lead generation & Presence and effectiveness of contact forms, dealer locator, appointment booking, and CTAs. \\
+Trust and credibility & Availability of corporate information, sustainability reports, and press releases. \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \begin{figure}[H]
-\FerrariPlaceholder{[Figure 4: Screenshot Placeholder --- Ferrari Homepage UX Elements]}
-\caption{Website evidence placeholder (do not embed image; insert later if permitted).}
+  \centering
+  \includegraphics[width=0.8\textwidth]{../team/5.1.jpg}
+%\FerrariPlaceholder{[Figure 4: Screenshot Placeholder --- Ferrari Homepage UX Elements]}
+\caption{Website evidence placeholder .}
 \end{figure}
 
 % ============================================================
 % Chapter 6
 % ============================================================
 \chapter{Classification of Goods and Services Produced by Ferrari}
-\section{Consumer Goods, Luxury Goods, and Specialty Products}
-From a marketing classification perspective, Ferrari vehicles are specialty goods: products for which consumers are willing to make special purchasing efforts due to unique characteristics and strong brand preference \parencite{kotlerkeller2016}. They also fall within luxury goods where consumption is partly driven by prestige and symbolic value.
 
-\section{Durable Goods and Intertemporal Choice}
-Vehicles are durable goods that provide a flow of services (transportation, driving pleasure, status) over time. Economic analysis considers intertemporal decision-making: buyers may evaluate expected resale value, maintenance costs, and the temporal utility of ownership. Limited editions may also have collectible attributes, shifting demand from purely consumption to investment-like motives.
+\section{Veblen Goods and Inelastic Demand}
+From a microeconomic perspective, Ferrari vehicles defy standard demand curves. They are classified as \textbf{Veblen Goods}: luxury commodities for which the quantity demanded increases as the price increases, due to an exclusive nature and status appeal.
 
-\section{Services Around the Core Product}
-Ferrari also provides or enables services, including:
-\begin{itemize}[leftmargin=*]
-  \item aftersales and maintenance services,
-  \item warranty programs,
-  \item certified pre-owned ecosystems (where applicable),
-  \item brand experiences (track days, events, museums, tours),
-  \item digital services and account-based personalization.
+\begin{itemize}
+    \item \textbf{Specialty Classification:} In marketing terms, these are specialty goods where the cross-price elasticity of demand is low; consumers will not accept substitutes (e.g., a Porsche) purely based on price differentials.
+    \item \textbf{Signaling Utility:} Consumption is driven not only by functional utility (transportation) but by signaling utility—the ability to signal wealth and social standing to others.
 \end{itemize}
 
+\section{Durable Goods and Asset Economics}
+Vehicles are traditionally treated as durable goods subject to depreciation. However, Ferrari’s limited production strategy alters the intertemporal choice model for buyers:
+
+\begin{itemize}
+    \item \textbf{Store of Value:} Unlike standard vehicles, specific Ferrari models (particularly the \textit{Icona} series or limited V12s) function as investment assets. The expected resale value often exceeds the initial purchase price, creating a negative depreciation rate.
+    \item \textbf{Temporal Utility:} The ``flow of services'' includes driving pleasure and access to an exclusive club. Buyers calculate the Net Present Value (NPV) of ownership by factoring in maintenance costs against the high probability of asset appreciation.
+\end{itemize}
+
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}[scale=1.0]
+        % Axes
+        \draw[->] (0,0) -- (8,0) node[right] {Quantity ($Q$)};
+        \draw[->] (0,0) -- (0,6) node[above] {Price ($P$)};
+        
+        % Vertical Supply Curve (Artificial Scarcity)
+        \draw[thick, blue] (3,0) -- (3,5.5) node[above] {$S_{fixed}$};
+        \draw[dashed] (3,0) -- (3,-0.5) node[below] {$Q_{capped}$};
+        
+        % Demand Curve (Standard)
+        \draw[thick, red] (1,5) -- (6,1) node[right] {$D_{standard}$};
+        
+        % Demand Curve (Veblen/High Brand Equity)
+        \draw[thick, red, dashed] (2,5.5) -- (7,1.5) node[right] {$D_{luxury}$};
+        
+        % Equilibrium Points
+        \filldraw[black] (3,3.4) circle (2pt) node[anchor=south west] {$E_1$};
+        \filldraw[black] (3,4.7) circle (2pt) node[anchor=south west] {$E_2$};
+        
+        % Price dotted lines
+        \draw[dotted] (0,3.4) -- (3,3.4);
+        \draw[dotted] (0,4.7) -- (3,4.7);
+        
+        % Labels
+        \node[left] at (0,3.4) {$P_{market}$};
+        \node[left] at (0,4.7) {$P_{ferrari}$};
+        
+        % Scarcity Premium Brace
+        \draw[decorate,decoration={brace,amplitude=5pt}] (0.2,3.4) -- (0.2,4.7) 
+            node[midway, left=8pt] {\footnotesize Scarcity Premium};
+            
+    \end{tikzpicture}
+    \caption{\textbf{The Economics of Artificial Scarcity.} Unlike standard manufacturers, Ferrari fixes Supply $S_{\text{fixed}}$ perfectly vertical. As Brand Equity shifts Demand from $D_{\text{standard}}$  to $D_{\text{luxury}}$, the price increases ($P_{ferrari}$) without necessitating an increase in production volume.}
+    \label{fig:scarcity_curve}
+\end{figure}
+
+
+\section{The Service Ecosystem (Ferrari Classiche \& Aftersales)}
+Ferrari has shifted from a pure manufacturing model to a service-dominant logic to capture lifetime value.
+
+\begin{itemize}
+    \item \textbf{Information Asymmetry Reduction:} Programs like \textit{Ferrari Classiche} (certification of authenticity) reduce information asymmetry in the secondary market, artificially inflating the value of vintage models.
+    \item \textbf{Maintenance as Retention:} The ``7-Year Genuine Maintenance'' program internalizes the cost of ownership, reducing the perceived barrier to entry while ensuring dealer network retention.
+\end{itemize}
+
+% --- TABLE 6.1 ---
 \begin{table}[H]
-\centering
-\caption{Ferrari offering portfolio classification (illustrative).}
-\begin{tabularx}{0.95\textwidth}{@{}p{0.23\textwidth}p{0.25\textwidth}X@{}}
-\toprule
-\textbf{Category} & \textbf{Examples (placeholder)} & \textbf{Economic/marketing relevance}\\
-\midrule
-Core goods & Road cars, limited series & Differentiation, scarcity, high WTP, durable-good pricing.\\
-Complementary goods & Branded merchandise & Brand extension, identity signaling, funnel for aspirational segments.\\
-Services & Aftersales, experiences & Relationship marketing, retention, switching costs, lifetime value.\\
-Digital services & Website/account ecosystem & Data-driven personalization, CRM, community management.\\
-\bottomrule
-\end{tabularx}
+    \centering
+    \caption{Economic Classification of Ferrari’s Portfolio}
+    \label{tab:ferrari_portfolio}
+    \vspace{0.3cm}
+    % The 'X' column type automatically wraps text to fit the width
+    \begin{tabularx}{\textwidth}{@{} l >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X @{}}
+        \toprule
+        \textbf{Category} & \textbf{Examples} & \textbf{Economic/Marketing Relevance} \\
+        \midrule
+        \textbf{Core Goods (Veblen)} & Icona Series (Daytona SP3), Hypercars (LaFerrari) & \textbf{Artificial Scarcity:} Supply is strictly capped below demand to maintain high equilibrium prices and exclusivity. \\
+        \addlinespace
+        \textbf{Production Goods} & Roma, Purosangue (SUV), 296 GTB & \textbf{Revenue Drivers:} Higher volume models that fund R\&D. These rely on high Willingness To Pay (WTP) and brand differentiation. \\
+        \addlinespace
+        \textbf{Complementary Goods} & Merchandise, Licensing (Watches, Apparel) & \textbf{Brand Extension:} Low barrier-to-entry goods that extract consumer surplus from aspirational fans who cannot afford the core product. \\
+        \addlinespace
+        \textbf{Services} & Ferrari Classiche, Corse Clienti & \textbf{Lock-in Effect:} Creates high switching costs. Owners are ``locked'' into the ecosystem through track days and certification services. \\
+        \addlinespace
+        \textbf{Digital Goods} & Esports Team, MyFerrari App & \textbf{Data Monopolization:} Collects user data for CRM personalization and engages the next generation of buyers (Gen Z). \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+
+% --- INSERT THIS IN CHAPTER 6 (New Section Idea: 6.4 Comparative Advantage) ---
+
+\section{Benchmarking: Automaker vs. Luxury House}
+To understand Ferrari's economic classification, one must compare its operating margins to standard automakers. Ferrari trades at multiples closer to Hermès or LVMH than to Volkswagen or Ford.
+
+\begin{table}[H]
+    \centering
+    \caption{Operational Efficiency Comparison (Illustrative 2023/2024 Data)}
+    \label{tab:competitors}
+    \begin{tabularx}{\textwidth}{l c c X}
+        \toprule
+        \textbf{Company} & \textbf{EBIT Margin} & \textbf{Avg. Selling Price} & \textbf{Economic Classification} \\
+        \midrule
+        \textbf{Ferrari (RACE)} & \textbf{$\approx$ 27\%} & \textbf{$>$ \$350k} & \textbf{Veblen / Ultra-Luxury} \\
+        Porsche & $\approx$ 18\% & $\approx$ \$110k & Premium Luxury \\
+        Mercedes-Benz & $\approx$ 12\% & $\approx$ \$70k & Premium Consumer \\
+        Ford / GM & $\approx$ 6-8\% & $\approx$ \$50k & Mass Market Durable \\
+        \bottomrule
+    \end{tabularx}
+    \vspace{0.2cm}
+    \small{\textit{Note: Ferrari's significantly higher EBIT margin indicates pricing power derived from brand equity rather than economies of scale.}}
 \end{table}
 
 % ============================================================
 % Chapter 7
 % ============================================================
-\chapter{Ferrari\textquotesingle s Marketing Methods and Promotional Strategies}
-\section{Luxury Marketing Logic}
-Luxury marketing differs from mass marketing in its relationship to scarcity, visibility, and narrative control. The objective is not to maximize short-run volume but to maintain desirability, ensure high brand equity, and preserve long-term pricing power.
+\section{The Economics of Artificial Scarcity}
+Ferrari’s marketing logic is grounded in the economic principle of \textbf{Artificial Scarcity}. By deliberately limiting production volumes (historically capping units sold per year despite rising demand), Ferrari shifts the supply curve leftward. This ensures that:
 
-\section{Promotional Mix}
-Ferrari's promotional approach can be analyzed across:
-\begin{itemize}[leftmargin=*]
-  \item \textbf{Advertising:} selective high-production brand storytelling rather than price-based advertising.
-  \item \textbf{Public relations:} racing achievements, design awards, limited edition launches.
-  \item \textbf{Experiential marketing:} events, track experiences, owner communities.
-  \item \textbf{Personal selling:} high-touch dealership relationships and client advisors.
-  \item \textbf{Sponsorships/partnerships:} aligned premium partners that reinforce status and performance.
-\end{itemize}
+\begin{enumerate}
+    \item \textbf{Price Maker Status:} The company retains strong pricing power.
+    \item \textbf{Excess Demand:} Long waiting lists create social proof and maintain high residual values for existing owners.
+\end{enumerate}
 
-\section{Integrated Marketing Communications (IMC)}
-IMC aims for consistent messaging across touchpoints. For Ferrari, consistency matters because brand equity can be damaged by incoherent narratives, overexposure, or partnerships that misalign with brand meaning.
+\section{The Promotional Mix}
+Ferrari does not utilize traditional ``push'' advertising. Instead, it relies on a ``pull'' strategy driven by heritage and performance.
+
+\begin{itemize}
+    \item \textbf{Public Relations (The Formula 1 Halo):} The Scuderia Ferrari F1 team is the primary marketing engine. It serves as a global R\&D billboard. The high fixed costs of F1 are justified by the ``Halo Effect,'' where racing victories validate the technological superiority of road cars.
+    \item \textbf{Experiential Marketing \& Clustering:} Events like the \textit{Ferrari Cavalcade} create network effects. By gathering owners together, Ferrari strengthens the social capital associated with the brand, making the ``club'' harder to leave.
+    \item \textbf{Personal Selling:} The sales process resembles private banking more than car retailing. Dealerships act as gatekeepers, allocating limited edition allocations (options to buy) only to top-tier clients, incentivizing loyalty.
 
 \begin{figure}[H]
-\FerrariPlaceholder{[Figure 5: Ferrari IMC Map (Paid/Owned/Earned Media Placeholder)]}
-\caption{IMC map placeholder.}
+    \centering
+    \begin{tikzpicture}
+        % Define the coordinates for the pyramid
+        \coordinate (A) at (-4,0);
+        \coordinate (B) at (4,0);
+        \coordinate (C) at (0,6);
+        
+        % Draw the big triangle
+        \draw[thick] (A) -- (B) -- (C) -- cycle;
+        
+        % Draw horizontal lines to slice the pyramid
+        \draw[thick] (-3.33, 1) -- (3.33, 1);
+        \draw[thick] (-2.66, 2) -- (2.66, 2);
+        \draw[thick] (-2, 3) -- (2, 3);
+        \draw[thick] (-1.33, 4) -- (1.33, 4);
+        
+        % Add Text Labels (Centered)
+        
+        % Top Tier
+        % Top Tier (Icona) - Adjusted to fit better
+        \node[align=center, font=\scriptsize] at (0, 4.6) {\textbf{TIER 1: ICONA}\\[-0.5ex] (Invitation Only)};
+        
+        % Tier 2
+        \node[align=center, font=\footnotesize] at (0, 3.5) {\textbf{TIER 2: VIP}\\(Special Series)};
+        
+        % Tier 3
+        \node[align=center, font=\footnotesize] at (0, 2.5) {\textbf{TIER 3: CORE}\\(Waitlisted)};
+        
+        % Tier 4
+        \node[align=center, font=\footnotesize] at (0, 1.5) {\textbf{TIER 4: ENTRY}\\(Available)};
+        
+        % Base
+        \node[align=center, font=\footnotesize] at (0, 0.5) {\textit{Mass Market (Not Ferrari)}};
+        
+    \end{tikzpicture}
+    \caption{\textbf{The Ferrari Ladder of Exclusivity.} Ferrari utilizes a "Conquest to Icona" funnel. Allocation of high-margin limited editions (Tier 1) acts as a reward mechanism.}
+    \label{fig:client_pyramid_visual}
 \end{figure}
+
+
+
+    
+    \item \textbf{Sponsorships (Co-Branding):} Partnerships with brands like Richard Mille or Bang \& Olufsen are not just revenue sources; they are signaling mechanisms that reinforce the ``high-performance luxury'' position through association.
+\end{itemize}
+
+
+\section{Integrated Marketing Communications (IMC)}
+
+For Ferrari, IMC ensures that the brand narrative remains consistent across all touchpoints. Unlike mass-market manufacturers that prioritize "reach" (viewership numbers), Ferrari prioritizes "resonance" (depth of engagement). The strategy rests on two economic pillars:
+
+\subsection{The "Silent" Marketing Paradox}
+Ferrari notably avoids mass media advertising (TV commercials, billboards). In economic signaling theory, this is a strategic choice. High-volume advertising is often a signal of elastic demand (the need to chase buyers). By \textit{not} advertising, Ferrari signals that demand already exceeds supply. The brand relies on "earned media" (viral social media content, journalist reviews) which has a marginal cost of zero but high credibility.
+
+\subsection{The Digital "Atelier" Strategy}
+Ferrari has digitized the "Personal Selling" experience to capture the younger demographic (Gen Z/Millennials). The \textit{MyFerrari} application acts as a "digital ledger," tracking the vehicle's history, service needs, and exclusive event invitations. This reduces the transaction costs of ownership and keeps the client perpetually connected to the dealer network, increasing the Lifetime Value (LTV) of the customer.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=0.9]
+        % Nodes
+        \node[draw, circle, align=center, minimum size=2.5cm, thick] (F1) at (0, 3) {\textbf{FORMULA 1} \\ (R\&D + Global \\ Marketing)};
+        \node[draw, circle, align=center, minimum size=2.5cm, thick] (Brand) at (3.5, 0) {\textbf{BRAND} \\ \textbf{EQUITY} \\ (Exclusivity)};
+        \node[draw, circle, align=center, minimum size=2.5cm, thick] (Road) at (-3.5, 0) {\textbf{ROAD CARS} \\ (High Margins \\ Revenue)};
+        
+        % Arrows
+        \draw[->, thick, bend left=45] (F1) to node[right, font=\footnotesize] {Tech Transfer \& Halo Effect} (Brand);
+        \draw[->, thick, bend left=45] (Brand) to node[below, font=\footnotesize] {Pricing Power} (Road);
+        \draw[->, thick, bend left=45] (Road) to node[left, font=\footnotesize] {Funding} (F1);
+        
+        % Center Label
+        \node[align=center, font=\small] at (0,0.5) {\textit{The Ferrari} \\ \textit{Virtuous Cycle}};
+        
+    \end{tikzpicture}
+    \caption{\textbf{The Ferrari "Virtuous Cycle."} Marketing spending is concentrated in Formula 1. Success on track creates Brand Equity, which allows for high pricing on Road Cars. The profits from Road Cars are then reinvested into F1, completing the cycle.}
+    \label{fig:virtuous_cycle}
+\end{figure}
+
 
 % ============================================================
 % Chapter 8
@@ -588,7 +786,7 @@ Even luxury brands face elasticity constraints. Macroeconomic shocks can reduce 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{../team/9.1.png}
+\includegraphics[width=0.8\textwidth]{../team/9.1.png}
 %\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure 6: Pricing Architecture Ladder (Core Models to Limited Series)]\vspace{1.2cm}}}
 \caption{Pricing architecture.}
 \end{figure}
@@ -658,13 +856,13 @@ Substitutes include other luxury performance brands, high-end experiences (yacht
 \subsection{Rivalry Among Existing Competitors}
 Rivalry includes product innovation, brand storytelling, racing involvement, and experience ecosystems. Price competition is typically muted due to premium positioning.
 
-\begin{figure}[H]
-\centering
-\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure 7: Five Forces Diagram (Ferrari Segment Placeholder)]\vspace{1.2cm}}}
-\caption{Porter five forces placeholder.}
-\end{figure}
+% \begin{figure}[H]
+% \centering
+% \fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure 7: Five Forces Diagram (Ferrari Segment Placeholder)]\vspace{1.2cm}}}
+% \caption{Porter five forces placeholder.}
+% \end{figure}
 
-\section{PESTEL Overview (Template)}
+\section{PESTEL Overview}
 \begin{table}[H]
 \centering
 \caption{PESTEL analysis for Ferrari (qualitative template).}
@@ -672,15 +870,21 @@ Rivalry includes product innovation, brand storytelling, racing involvement, and
 \toprule
 \textbf{Factor} & \textbf{Key points for Ferrari (write bullet-style evidence)}\\
 \midrule
-Political & [Trade policy, industrial policy, stability in key markets.]\\
-Economic & [High-income demand cycles, wealth effects, currency factors.]\\
-Social & [Luxury norms, lifestyle trends, generational shifts.]\\
-Technological & [Electrification, software, materials, connectivity.]\\
-Environmental & [Emissions regulations, sustainability expectations.]\\
-Legal & [Safety, data privacy, advertising rules, IP protection.]\\
+Political & Trade policies, industrial regulation, and political stability in key luxury markets. \\
+Economic & Wealth effects among high-income consumers, currency fluctuations, and global economic cycles. \\
+Social & Changing luxury norms, sustainability awareness, and generational shifts in consumption values. \\
+Technological & Electrification, software-defined vehicles, advanced materials, and digital connectivity. \\
+Environmental & Emissions regulations, sustainability expectations, and pressure for responsible manufacturing. \\
+Legal & Safety standards, data privacy laws, intellectual property protection, and advertising regulations. \\
 \bottomrule
 \end{tabularx}
 \end{table}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{../team/pestel.png}
+\caption{PESTEL Analysis.}
+\end{figure}
 
 \section{Market Trends Shaping Luxury Performance Automobiles}
 \subsection{Electrification and the Redefinition of Performance}
@@ -699,12 +903,13 @@ Luxury firms increasingly compete in an experience economy: consumers may value 
 
 \begin{figure}[H]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure 9: Trend Map (Electrification, Software, Sustainability, Experience Economy)]\vspace{1.2cm}}}
+\includegraphics[width=0.8\textwidth]{../team/11.2.png}
+%\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure 9: Trend Map (Electrification, Software, Sustainability, Experience Economy)]\vspace{1.2cm}}}
 \caption{Market trend map placeholder.}
 \end{figure}
 
 % ============================================================
-% Chapter 11A (added)
+% Chapter 12
 % ============================================================
 \chapter{Consumer Behavior and Brand Equity in the Ferrari Context}
 \section{Motivations in Luxury Performance Consumption}
@@ -738,22 +943,31 @@ Brand dilution occurs when brand meaning becomes less distinctive or less credib
   \toprule
   \textbf{Dimension} & \textbf{Ferrari evidence and interpretation (fill with sources/observations)}\\
 \midrule
-Awareness & [Global reach, cultural references, racing visibility.]\\
-Perceived quality & [Engineering narratives, craftsmanship cues, warranty/service signals.]\\
-Associations & [Heritage, exclusivity, performance; consistency across touchpoints.]\\
-Loyalty & [Owner community, repurchase pathways, events participation.]\\
+Brand Awareness
+& Ferrari enjoys exceptionally high global brand awareness, supported by its iconic prancing horse logo, long-standing participation in Formula 1, and frequent cultural references in media and popular culture. The brand is instantly recognizable even among non-car consumers, reinforcing top-of-mind awareness. However, excessive exposure through licensing and merchandise may risk shifting awareness from exclusivity toward mass familiarity, potentially contributing to brand dilution. \\
+
+Perceived Quality 
+& Ferrari is strongly associated with superior engineering, high-performance vehicles, and meticulous craftsmanship. Evidence includes advanced powertrain technology, limited production volumes, premium pricing, and personalized manufacturing processes. After-sales services, warranties, and racing-derived innovations further reinforce perceived quality. Any inconsistency in product reliability or quality across licensed products could undermine this perception and pose reputational risks. \\
+
+Brand Associations 
+& Ferrari’s core associations include racing heritage, exclusivity, luxury, performance excellence, and Italian craftsmanship. These associations are consistently communicated through motorsport success, design language, brand storytelling, and controlled customer experiences at dealerships and brand events. Misaligned partnerships, over-diversification into non-core categories, or inconsistent retail experiences may weaken these associations and dilute the brand’s symbolic meaning. \\
+
+Brand Loyalty
+& Ferrari demonstrates strong brand loyalty, particularly among owners and collectors, reflected in high repurchase rates, long waiting lists, and active participation in Ferrari-sponsored events, clubs, and racing experiences. Emotional attachment and community belonging strengthen customer lifetime value. However, perceived loss of exclusivity or reputational damage could erode emotional loyalty even if transactional loyalty remains high. \\
+
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \begin{figure}[H]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure 10: Brand Equity Pyramid (Ferrari Placeholder)]\vspace{1.2cm}}}
-\caption{Brand equity pyramid placeholder.}
+\includegraphics[width=0.8\textwidth]{../team/12.1.png}
+%\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure 10: Brand Equity Pyramid (Ferrari Placeholder)]\vspace{1.2cm}}}
+\caption{Brand equity pyramid.}
 \end{figure}
 
 % ============================================================
-% Chapter 11B (added)
+% Chapter 13
 % ============================================================
 \chapter{Marketing Mix Deep Dive: Product, Place, and Promotion (Ferrari)}
 \section{Product Strategy and Portfolio Architecture}
@@ -795,7 +1009,7 @@ An academic evaluation can examine:
 \end{figure}
 
 % ============================================================
-% Chapter 12
+% Chapter 14
 % ============================================================
 \chapter{Application of Economic Principles to Ferrari\textquotesingle s Business Model}
 \section{Scarcity, Allocation, and Perceived Value}
@@ -830,7 +1044,7 @@ Regulation/externalities & DEnvironmental regulations and emissions standards si
 \end{table}
 
 % ============================================================
-% Chapter 13
+% Chapter 15
 % ============================================================
 \chapter{SWOT Analysis}
 \section{Strengths}
@@ -867,13 +1081,13 @@ Regulation/externalities & DEnvironmental regulations and emissions standards si
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{../team/15.1.png}
+\includegraphics[width=0.8\textwidth]{../team/15.1.png}
 %\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure 8: SWOT Matrix (Ferrari Placeholder)]\vspace{1.2cm}}}
 \caption{SWOT matrix.}
 \end{figure}
 
 % ============================================================
-% Chapter 14
+% Chapter 16
 % ============================================================
 \chapter{Challenges, Opportunities, and Future Marketing Strategies}
 \section{Strategic Challenges}
@@ -947,50 +1161,100 @@ Sustainability narrative & 12--36 months & \begin{itemize}
 \end{table}
 
 % ============================================================
-% Chapter 14A (added)
+% Chapter 17 (sharaf)
 % ============================================================
-\chapter{Implementation, Control, and Metrics (Marketing Plan Perspective)}
+\chapter{Implementation, Control, and Metrics}
+
 \section{Why Control Systems Matter in Luxury}
 Marketing strategy is only as effective as its implementation. In luxury contexts, implementation failures can be especially costly because they generate reputational damage rather than merely lost sales. Therefore, Ferrari requires control systems that monitor service quality, communication coherence, and customer experience consistency.
 
 In academic terms, control systems provide feedback loops that reduce variance in service delivery and protect the brand promise. They also reduce internal principal--agent problems, where local commercial incentives could otherwise encourage decisions that conflict with long-term brand stewardship.
 
-\section{Balanced Scorecard for Ferrari Marketing (Template)}
+% -----------------------------------------------------------
+% SECTION 17.2: BALANCED SCORECARD
+% -----------------------------------------------------------
+\section{Balanced Scorecard for Ferrari Marketing}
 A balanced scorecard approach can translate strategy into measurable objectives across four perspectives: financial, customer, internal process, and learning/innovation.
 
-\begin{table}[H]
-\centering
-\caption{Balanced scorecard template for Ferrari marketing control.}
-\begin{tabularx}{0.95\textwidth}{@{}p{0.18\textwidth}p{0.32\textwidth}X@{}}
-  \toprule
-  \textbf{Perspective} & \textbf{Objectives (examples)} & \textbf{Measures / targets (placeholders)}\\
-\midrule
-Financial & Protect premium margin; grow services value & [Margin proxy], [services share], [mix quality]\\
-Customer & Increase loyalty and advocacy & [Repeat purchase rate], [NPS], [event participation]\\
-Internal process & Improve journey consistency & [Response time], [service cycle time], [quality audits]\\
-Learning/innovation & Strengthen capabilities & [Training hours], [digital adoption], [innovation milestones]\\
-\bottomrule
-\end{tabularx}
+% [H] forces the table to stay RIGHT HERE.
+\begin{table}[H] 
+    \small
+    \centering
+    \renewcommand{\arraystretch}{1.2} % Slightly tighter to save space
+    \caption{Balanced Scorecard for Ferrari Marketing Control}
+    \label{tab:balanced_scorecard}
+    
+    \begin{tabularx}{\textwidth}{@{} >{\bfseries}l >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X @{}}
+        \toprule
+        Perspective & \textbf{Objectives} & \textbf{Measures / Targets} \\ 
+        \midrule
+        
+        Financial & 
+        Protect premium margins; grow value of services. & 
+        Maintain/increase EBIT margin; 15\% growth in revenue from ``Tailor Made'' and Bespoke services [4, 5]. \\ 
+        \addlinespace
+        
+        Customer & 
+        Increase brand loyalty and community advocacy. & 
+        $>$80\% repeat purchase rate; NPS above 70; 20\% growth in official club memberships [4, 5]. \\ 
+        \addlinespace
+        
+        Internal Process & 
+        Improve customer journey consistency and digital integration. & 
+        $<$24-hour response time for dealer leads; 100\% compliance with global retail experience standards [4, 5]. \\ 
+        \addlinespace
+        
+        Learning/Innov. & 
+        Strengthen digital capabilities and sustainability. & 
+        Completion of digital clienteling training; achievement of key hybrid/EV technology milestones [4, 5]. \\ 
+        \bottomrule
+    \end{tabularx}
 \end{table}
 
-\section{Risk Register (Template)}
+% -----------------------------------------------------------
+% SECTION 17.3: RISK REGISTER
+% -----------------------------------------------------------
+% This will now appear immediately AFTER the table above.
+\section{Risk Register}
+The following risk register outlines potential strategic threats and the mitigation strategies required to protect brand equity.
+
+% [H] forces this table to stay RIGHT HERE too.
 \begin{table}[H]
-\centering
-\caption{Marketing and strategic risk register (template).}
-\begin{tabularx}{0.95\textwidth}{@{}p{0.22\textwidth}p{0.12\textwidth}p{0.12\textwidth}X@{}}
-  \toprule
-  \textbf{Risk} & \textbf{Likelihood} & \textbf{Impact} & \textbf{Mitigation (placeholder)}\\
-\midrule
-Brand dilution & [L/M/H] & [L/M/H] & Partnership governance; scarcity discipline; consistent retail standards.\\
-Cyber/privacy incident & [L/M/H] & [L/M/H] & Privacy-by-design; security audits; incident response plan.\\
-Regulatory shift & [L/M/H] & [L/M/H] & Scenario planning; tech roadmap; compliant claims review.\\
-Macroeconomic downturn & [L/M/H] & [L/M/H] & Geographic diversification; strengthen services/experiences; cost agility.\\
-\bottomrule
-\end{tabularx}
+    \centering
+    \small
+    \renewcommand{\arraystretch}{1.2}
+    \caption{Marketing and Strategic Risk Register}
+    \label{tab:risk_register}
+    
+    \begin{tabularx}{\textwidth}{@{} >{\bfseries}l c c >{\raggedright\arraybackslash}X @{}}
+        \toprule
+        Risk Event & \textbf{Prob.} & \textbf{Imp.} & \textbf{Mitigation Strategy} \\ 
+        \midrule
+        
+        Brand Dilution & 
+        Med & High & 
+        Strict scarcity discipline; rigorous partnership governance; consistent global retail standards [7]. \\ 
+        \addlinespace
+        
+        Cyber/Privacy & 
+        Low & High & 
+        ``Privacy-by-Design''; security audits of CRM/owner portals; incident response protocols [7]. \\ 
+        \addlinespace
+        
+        Regulatory Shift & 
+        High & High & 
+        Accelerated R\&D in electrification; tech roadmapping; framing sustainability as ``engineering excellence'' [7]. \\ 
+        \addlinespace
+        
+        Macro Downturn & 
+        Med & Med & 
+        Geographic diversification; strengthening counter-cyclical revenue (aftersales/experiences) [7]. \\ 
+        \bottomrule
+    \end{tabularx}
 \end{table}
 
 % ============================================================
-% Chapter 15
+% Chapter 18
 % ============================================================
 \chapter{Conclusion and Recommendations}
 \section{Conclusion}
@@ -1055,43 +1319,324 @@ Physical Evidence & Tangible cues that reflect luxury and heritage, including sh
 \end{tabularx}
 \end{table}
 
-\chapter{Appendix B: Customer Journey Map and Touchpoints (Template)}
-\section{Stages and Touchpoints}
-\begin{longtable}{@{}p{0.17\textwidth}p{0.24\textwidth}p{0.24\textwidth}p{0.27\textwidth}@{}}
-\caption{Customer journey template for Ferrari.}\\
-\toprule
-\textbf{Stage} & \textbf{Customer goals} & \textbf{Key touchpoints} & \textbf{Metrics / risks}\\
-\midrule
-Awareness & Discover brand meaning & Website, social, PR, racing & Reach, sentiment, credibility risks\\
-Consideration & Evaluate fit and access & Configurator, dealer contact, events & Lead quality, response time\\
-Acquisition & Secure allocation and purchase & Client advisor, financing, contracts & Allocation fairness, compliance\\
-Delivery & Celebrate ownership & Delivery ceremony, onboarding & Satisfaction, advocacy intent\\
-Ownership & Maintain vehicle and relationship & Aftersales, club events, digital services & Retention, service quality\\
-Repurchase & Upgrade or add vehicles & Invitations, loyalty programs & Repeat purchase rate\\
-\bottomrule
+%(sharaf)
+\chapter{Appendix B: Customer Journey Map and Touchpoints}
+
+\section{Strategic Stages and Touchpoints}
+
+Table B.1 below details the six stages of the Ferrari customer journey, mapping specific touchpoints to customer goals and strategic metrics.
+
+% -----------------------------------------------------------
+% TABLE B.1: LONGTABLE VERSION (Flows across pages)
+% -----------------------------------------------------------
+% Column widths: 12% | 27% | 27% | 27% (Sums to ~93% to fit margins)
+\begin{longtable}{@{} p{0.12\textwidth} p{0.27\textwidth} p{0.27\textwidth} p{0.27\textwidth} @{}}
+    
+    \caption{Detailed Customer Journey Map and Strategic Touchpoints for Ferrari} \\
+    \toprule
+    \textbf{Stage} & \textbf{Customer Goals} & \textbf{Key Touchpoints} & \textbf{Metrics \& Risks} \\ 
+    \midrule
+    \endfirsthead
+
+    % This header appears on the NEXT page
+    \multicolumn{4}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+    \toprule
+    \textbf{Stage} & \textbf{Customer Goals} & \textbf{Key Touchpoints} & \textbf{Metrics \& Risks} \\ 
+    \midrule
+    \endhead
+
+    \bottomrule
+    \multicolumn{4}{r}{{Continued on next page...}} \\ 
+    \endfoot
+
+    \bottomrule
+    \endlastfoot
+
+    % --- ROW 1: AWARENESS ---
+    \textbf{Awareness} & 
+    Discover brand meaning, racing heritage, and identity signaling. & 
+    \begin{itemize}[leftmargin=*, nosep]
+        \item F1 Racing and Motorsport achievements.
+        \item Official Website (Storytelling/Heritage).
+        \item Global PR (Design awards/Product reveals).
+        \item Social Media (Racing/Lifestyle content).
+    \end{itemize} & 
+    \textbf{Metrics:} Global reach, brand sentiment, cultural visibility. \par
+    \vspace{0.3em}
+    \textbf{Risks:} Brand dilution through overexposure; loss of racing credibility. \\ 
+    \addlinespace[1.5em] % Adds breathing room between rows
+    
+    % --- ROW 2: CONSIDERATION ---
+    \textbf{Consideration} & 
+    Evaluate model fit, performance specs, and access levels. & 
+    \begin{itemize}[leftmargin=*, nosep]
+        \item Online Digital Configurator and Model Pages.
+        \item Initial Dealer Contact and Showroom Visits.
+        \item Exclusive Private Events and Factory content.
+        \item Personalised Account/Digital Services.
+    \end{itemize} & 
+    \textbf{Metrics:} Qualified lead rate, engagement depth, lead response time. \par
+    \vspace{0.3em}
+    \textbf{Risks:} Inconsistent dealer response; website UX friction. \\ 
+    \addlinespace[1.5em]
+
+    % --- ROW 3: ACQUISITION ---
+    \textbf{Acquisition} & 
+    Secure vehicle allocation and finalize bespoke contracts. & 
+    \begin{itemize}[leftmargin=*, nosep]
+        \item One-on-one Client Advisor consultations.
+        \item ``Tailor Made'' or Atelier Bespoke sessions.
+        \item Financing, Warranty, and Service Contracts.
+        \item Allocation status and Waitlist management.
+    \end{itemize} & 
+    \textbf{Metrics:} Conversion rate (lead to deposit); revenue from customization. \par
+    \vspace{0.3em}
+    \textbf{Risks:} Perceived unfairness in allocation; compliance/legal errors. \\ 
+    \addlinespace[1.5em]
+    
+    % --- ROW 4: DELIVERY ---
+    \textbf{Delivery} & 
+    Celebrate ownership entry and join the exclusive community. & 
+    \begin{itemize}[leftmargin=*, nosep]
+        \item Factory Delivery Ceremony (Maranello).
+        \item Local Showroom Handover and Onboarding.
+        \item Ownership Rituals (Artifacts/packaging).
+        \item Official Factory Tours and Museum access.
+    \end{itemize} & 
+    \textbf{Metrics:} Initial satisfaction score; Advocacy intent. \par
+    \vspace{0.3em}
+    \textbf{Risks:} Physical evidence mismatch (showroom quality); poor ceremony execution. \\ 
+    \addlinespace[1.5em]
+
+    % --- ROW 5: OWNERSHIP ---
+    \textbf{Ownership} & 
+    Maintain performance and deepen the relationship via experiences. & 
+    \begin{itemize}[leftmargin=*, nosep]
+        \item Certified Pre-owned and Aftersales.
+        \item Official Owner Clubs and Track Days.
+        \item Digital Support Portals and CRM personalization.
+        \item Curated Travel and Lifestyle events.
+    \end{itemize} & 
+    \textbf{Metrics:} Retention rate; service cycle time; digital adoption rate. \par
+    \vspace{0.3em}
+    \textbf{Risks:} Cyber/Privacy incident (CRM data); service quality variance. \\ 
+    \addlinespace[1.5em]
+    
+    % --- ROW 6: REPURCHASE ---
+    \textbf{Repurchase} & 
+    Upgrade collection and secure limited series access. & 
+    \begin{itemize}[leftmargin=*, nosep]
+        \item Exclusive Invitations to Limited Series.
+        \item Loyalty-based allocation programs.
+        \item Relationship-marketing driven by CRM data.
+        \item High-touch invitations to special events.
+    \end{itemize} & 
+    \textbf{Metrics:} Repeat purchase rate; Customer Lifetime Value (CLV). \par
+    \vspace{0.3em}
+    \textbf{Risks:} Frustrated demand (waiting lists); loss of loyalty due to poor stewardship. \\ 
+    
 \end{longtable}
 
-\begin{figure}[H]
-\centering
-\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure A1: Ferrari Customer Journey Diagram Placeholder]\vspace{1.2cm}}}
-\caption{Customer journey placeholder.}
+\clearpage
+
+% -----------------------------------------------------------
+% FIGURE B.1: CUSTOMER JOURNEY DIAGRAM
+% -----------------------------------------------------------
+\section{Strategic Ecosystem Map}
+
+Figure B.1 illustrates the integrated flow of the customer journey, highlighting the ``Loyalty Allocation Mechanism'' that routes high-value clients from the Repurchase stage back to priority Acquisition status.
+
+\begin{figure}[htbp]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tikzpicture}[
+        node distance=1.5cm and 1.2cm,
+        stage/.style={
+            rectangle, 
+            draw=red!80!black, 
+            ultra thick, 
+            fill=white, 
+            text width=6.2cm,
+            minimum height=5.2cm, 
+            align=left,
+            font=\small, 
+            drop shadow={opacity=0.2, shadow xshift=3pt, shadow yshift=-3pt},
+            rounded corners=4pt,
+            inner sep=10pt
+        },
+        arrow/.style={-{Stealth[scale=1.5]}, red!80!black, ultra thick, rounded corners=5pt}
+    ]
+
+    % --- NODES ---
+    \node (aware) [stage] {
+        \textbf{\large 1. AWARENESS}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Symbolic Utility \& Racing Heritage\\
+        $\bullet$ \textbf{Touchpoints:} F1 Scuderia, Global PR, Brand Mythology\\
+        $\bullet$ \textbf{Metric:} Cultural Visibility \& Awareness\\[10pt]
+        \textit{\scriptsize Ref: Ch 2.1.1, 7.2}
+    };
+
+    \node (consid) [stage, right=of aware] {
+        \textbf{\large 2. CONSIDERATION}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Digital Storytelling \& Info Asymmetry\\
+        $\bullet$ \textbf{Touchpoints:} 3D Configurator, Website, Landing Pages\\
+        $\bullet$ \textbf{Metric:} Engagement Depth \& Lead Quality\\[10pt]
+        \textit{\scriptsize Ref: Ch 5.2, 12.2}
+    };
+
+    \node (acq) [stage, right=of consid] {
+        \textbf{\large 3. ACQUISITION}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Scarcity \& Monopolistic Competition\\
+        $\bullet$ \textbf{Touchpoints:} Client Advisor, ``Tailor Made'', Waitlists\\
+        $\bullet$ \textbf{Metric:} Margin Protection \& Customisation Rev.\\[10pt]
+        \textit{\scriptsize Ref: Ch 9.2, 14.1}
+    };
+
+    \node (deliv) [stage, below=of acq] {
+        \textbf{\large 4. DELIVERY}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Physical Evidence \& Process Quality\\
+        $\bullet$ \textbf{Touchpoints:} Factory Ceremony, Handover Rituals\\
+        $\bullet$ \textbf{Metric:} Satisfaction Score \& Advocacy Intent\\[10pt]
+        \textit{\scriptsize Ref: Appx A.7, 13.2}
+    };
+
+    \node (own) [stage, left=of deliv] {
+        \textbf{\large 5. OWNERSHIP}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Relationship Marketing (Exp. Economy)\\
+        $\bullet$ \textbf{Touchpoints:} Corse Clienti, Owner Clubs, Classiche\\
+        $\bullet$ \textbf{Metric:} Service Cycle \& Community Engagement\\[10pt]
+        \textit{\scriptsize Ref: Ch 11.4.4, 16.2}
+    };
+
+    \node (repur) [stage, left=of own] {
+        \textbf{\large 6. REPURCHASE}\\[5pt]
+        \rule{6.2cm}{0.5pt} \\[5pt]
+        $\bullet$ \textbf{Driver:} Brand Equity \& CLV\\
+        $\bullet$ \textbf{Touchpoints:} Icona/Limited Series Invites, Allocation\\
+        $\bullet$ \textbf{Metric:} Repeat Purchase \& Resale Value\\[10pt]
+        \textit{\scriptsize Ref: Ch 12.3, Rec R1}
+    };
+
+    % --- ARROWS ---
+    \draw [arrow] (aware) -- (consid);
+    \draw [arrow] (consid) -- (acq);
+    \draw [arrow] (acq) -- (deliv);
+    \draw [arrow] (deliv) -- (own);
+    \draw [arrow] (own) -- (repur);
+
+    % --- LOOP ---
+    \draw [arrow, dashed] (repur.west) 
+        -- ++(-1.0, 0)                  
+        |- ($(acq.north) + (0, 1.8)$)   
+        -| (acq.north);                 
+
+    % --- LABEL ---
+    \node [fill=white, draw=red!80!black, font=\bfseries\scriptsize, rounded corners] 
+        at ($(consid.north) + (0, 1.8)$) {LOYALTY ALLOCATION MECHANISM};
+
+    \end{tikzpicture}
+    }
+    \caption{The Ferrari Customer Journey: Integrated Strategic Touchpoints and Economic Value Cycle.}
+    \label{fig:customer_journey_final}
 \end{figure}
 
-\chapter{Appendix C: Microeconomic Model Templates (For Data Insertion)}
-\section{Elasticity Estimation (Placeholder)}
-If data are available, estimate price elasticity using log-log regression:
-\[
+\chapter{Appendix C: Microeconomic Model}
+\section{Elasticity Estimation}
+
+In the absence of transaction-level market data, an illustrative elasticity estimation is performed using synthetically generated observations. This appendix demonstrates the estimation methodology without making empirical claims.
+
+The log--log demand model is specified as:
+
+\begin{equation}
 \ln(Q) = \alpha + \beta \ln(P) + \gamma X + \varepsilon
-\]
-where $Q$ is quantity (orders/deliveries), $P$ is price (transaction price or index), and $X$ includes macro controls (income/wealth proxies, interest rates, consumer confidence). In absence of data, provide qualitative reasoning on elasticity drivers: differentiation, scarcity, social signaling, and substitution set.
+\end{equation}
 
-\section{Cost Structure Discussion Template}
-Explain fixed costs (R\&D, tooling, compliance, brand), variable costs (materials, labor, logistics), and how customization affects variable cost. Provide a placeholder chart for cost breakdown.
+where $Q$ denotes quantity demanded, $P$ represents price, $X$ is a control variable, and $\varepsilon$ is a stochastic error term. The coefficient $\beta$ represents the price elasticity of demand.
 
-\begin{figure}[H]
+\subsection*{MATLAB Implementation}
+
+\begin{lstlisting}[caption={Log--log elasticity estimation using illustrative data}]
+clc; clear; close all;
+
+% Reproducibility
+rng(1);
+
+% Number of observations
+n = 100;
+
+% Synthetic price data
+P = exp(2 + 0.3 * randn(n,1));
+
+% Control variable (income proxy)
+X = 50 + 10 * randn(n,1);
+
+% Assumed true elasticity
+beta_true = -0.8;
+
+% Generate quantity demanded
+Q = exp(5 + beta_true * log(P) + 0.02 * X + 0.2 * randn(n,1));
+
+% Log transformations
+lnQ = log(Q);
+lnP = log(P);
+
+% Regression matrix
+Z = [ones(n,1), lnP, X];
+
+% Ordinary Least Squares
+b = (Z' * Z) \ (Z' * lnQ);
+
+% Extract elasticity
+beta_hat = b(2);
+
+fprintf('Estimated price elasticity:\n');
+fprintf('   %.4f\n', beta_hat);
+\end{lstlisting}
+
+\subsection*{Estimation Result}
+
+The illustrative estimation yields the following price elasticity:
+
+\begin{equation}
+\hat{\beta} = -0.796
+\end{equation}
+
+This value indicates moderately inelastic demand, where quantity demanded responds proportionally less than price changes, consistent with standard economic theory.
+
+---
+
+\section{Cost Structure Discussion}
+
+The cost structure is decomposed into fixed and variable components. Fixed costs include research and development, tooling, compliance, branding, and administrative overheads, which are independent of production volume in the short run.
+
+Variable costs scale with output and include materials, labor, energy consumption, and logistics. The assumed cost proportions are used for illustrative purposes only.
+
+\subsection*{MATLAB Cost Structure Visualization}
+
+\begin{lstlisting}[caption={Illustrative cost structure visualization}]
+% Cost structure percentages
+fixed_costs    = 45;
+variable_costs = 55;
+
+costs = [fixed_costs, variable_costs];
+labels = {'Fixed Costs', 'Variable Costs'};
+
+figure;
+pie(costs, labels);
+title('Illustrative Cost Structure Breakdown');
+colormap([0.25 0.2 0.7; 1 1 0]);
+\end{lstlisting}
+
+\begin{figure}[h]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure A2: Cost Structure Pie/Bar Chart Placeholder]\vspace{1.2cm}}}
-\caption{Cost structure chart placeholder.}
+\includegraphics[width=0.6\textwidth]{../team/c1.png}
+\caption{Illustrative cost structure breakdown.}
+\label{fig:cost_structure}
 \end{figure}
 
 \chapter{Appendix D: Competitive Set and Positioning Map (Template)}
@@ -1107,7 +1652,8 @@ Construct a 2D positioning map, for example:
 
 \begin{figure}[H]
 \centering
-\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure A3: Perceptual Map Placeholder (Ferrari vs. Rivals)]\vspace{1.2cm}}}
+\includegraphics[width=0.8\textwidth]{../team/d1.png}
+%\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure A3: Perceptual Map Placeholder (Ferrari vs. Rivals)]\vspace{1.2cm}}}
 \caption{Perceptual map placeholder.}
 \end{figure}
 
