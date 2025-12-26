@@ -1,0 +1,14 @@
+# Fdb version 4
+["xdvipdfmx"] 0 "Ferrari_Economics_and_Marketing_Report.xdv" "Ferrari_Economics_and_Marketing_Report.pdf" "Ferrari_Economics_and_Marketing_Report" 0 -1
+  "Ferrari_Economics_and_Marketing_Report.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "Ferrari_Economics_and_Marketing_Report.pdf"
+  (rewritten before read)
+["xelatex"] 0 "Ferrari_Economics_and_Marketing_Report.tex" "Ferrari_Economics_and_Marketing_Report.xdv" "Ferrari_Economics_and_Marketing_Report" 0 -1
+  "Ferrari_Economics_and_Marketing_Report.aux" 0 -1 0 "xelatex"
+  "Ferrari_Economics_and_Marketing_Report.tex" 0 -1 0 ""
+  (generated)
+  "Ferrari_Economics_and_Marketing_Report.aux"
+  "Ferrari_Economics_and_Marketing_Report.log"
+  "Ferrari_Economics_and_Marketing_Report.xdv"
+  (rewritten before read)

@@ -1,0 +1,618 @@
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.12.20)  20 DEC 2025 12:18
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Ferrari_Economics_and_Marketing_Report.tex
+(e:/haga/ferrari-report/Ferrari_Economics_and_Marketing_Report.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+(c:/texlive/2025/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(c:/texlive/2025/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count271
+\c@chapter=\count272
+\c@section=\count273
+\c@subsection=\count274
+\c@subsubsection=\count275
+\c@paragraph=\count276
+\c@subparagraph=\count277
+\c@figure=\count278
+\c@table=\count279
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
+(c:/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(c:/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-11-14 L3 programming layer (loader) 
+
+(c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
+\g__graphics_track_int=\count280
+\g__pdfannot_backend_int=\count281
+\g__pdfannot_backend_link_int=\count282
+))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+
+(c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count283
+\l__fontspec_language_int=\count284
+\l__fontspec_strnum_int=\count285
+\l__fontspec_tmp_int=\count286
+\l__fontspec_tmpa_int=\count287
+\l__fontspec_tmpb_int=\count288
+\l__fontspec_tmpc_int=\count289
+\l__fontspec_em_int=\count290
+\l__fontspec_emdef_int=\count291
+\l__fontspec_strong_int=\count292
+\l__fontspec_strongdef_int=\count293
+\l__fontspec_tmpa_dim=\dimen149
+\l__fontspec_tmpb_dim=\dimen150
+\l__fontspec_tmpc_dim=\dimen151
+
+(c:/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(c:/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(c:/texlive/2025/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2025/12/01 v2.9 Modern multilingual typesetting with XeLaT
+eX and LuaLaTeX
+
+(c:/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+)
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+\l_xpg_alias_keyvals_int=\count295
+
+(c:/texlive/2025/texmf-dist/tex/latex/polyglossia/gloss-latex.ldf
+File: gloss-latex.ldf polyglossia: module for default language
+))
+(c:/texlive/2025/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
+File: gloss-english.ldf polyglossia: module for English
+)
+
+Package polyglossia Info: Default language is english
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Pagella scale = 0.91897255705757.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Pagella scale = 0.91897255705757.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Pagella scale = 0.91897255705757.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Pagella/B scale = 0.91897255705757.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Pagella/B scale = 0.91897255705757.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Pagella/I scale = 0.8162856392855165.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Pagella/I scale = 0.8162856392855165.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Pagella/BI scale = 0.8450961277148507.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Pagella/BI scale = 0.8450961277148507.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TeXGyrePagella(0)' created for font 'TeX
+(fontspec)             Gyre Pagella' with options
+(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.91897255705757]"TeX Gyre
+(fontspec)             Pagella/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[0.91897255705757]"TeX Gyre
+(fontspec)             Pagella/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.91897255705757]"TeX Gyre
+(fontspec)             Pagella/B/OT:script=latn;language=dflt;mapping=tex-text;
+"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[0.91897255705757]"TeX Gyre
+(fontspec)             Pagella/B/OT:script=latn;language=dflt;+smcp;mapping=tex
+-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.8162856392855165]"TeX Gyre
+(fontspec)             Pagella/I/OT:script=latn;language=dflt;mapping=tex-text;
+"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[0.8162856392855165]"TeX Gyre
+(fontspec)             Pagella/I/OT:script=latn;language=dflt;+smcp;mapping=tex
+-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.8450961277148507]"TeX Gyre
+(fontspec)             Pagella/BI/OT:script=latn;language=dflt;mapping=tex-text
+;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[0.8450961277148507]"TeX Gyre
+(fontspec)             Pagella/BI/OT:script=latn;language=dflt;+smcp;mapping=te
+x-text;"
+
+LaTeX Font Info:    Font shape `TU/TeXGyrePagella(0)/m/n' will be
+(Font)              scaled to size 11.02771pt on input line 13.
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8225173566032745.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8225173566032745.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8225173566032745.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/B scale = 0.7981463428418034.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/B scale = 0.7981463428418034.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/I scale = 0.8225173566032745.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/I scale = 0.8225173566032745.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/BI scale = 0.7981463428418034.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/BI scale = 0.7981463428418034.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TeXGyreHeros(0)' created for font 'TeX
+(fontspec)             Gyre Heros' with options
+(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.8225173566032745]"TeX Gyre
+(fontspec)             Heros/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[0.8225173566032745]"TeX Gyre
+(fontspec)             Heros/OT:script=latn;language=dflt;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.7981463428418034]"TeX Gyre
+(fontspec)             Heros/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[0.7981463428418034]"TeX Gyre
+(fontspec)             Heros/B/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.8225173566032745]"TeX Gyre
+(fontspec)             Heros/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[0.8225173566032745]"TeX Gyre
+(fontspec)             Heros/I/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.7981463428418034]"TeX Gyre
+(fontspec)             Heros/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[0.7981463428418034]"TeX Gyre
+(fontspec)             Heros/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+
+
+Package fontspec Info: 
+(fontspec)             Latin Modern Mono scale = 0.9999970497384594.
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Latin Modern Mono/B" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Latin Modern Mono scale = 0.9999970497384594.
+
+
+Package fontspec Info: 
+(fontspec)             Latin Modern Mono/I scale = 0.9999970497384594.
+
+
+Package fontspec Info: 
+(fontspec)             Latin Modern Mono/BI scale = 0.9999970497384594.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'LatinModernMono(0)' created for font
+(fontspec)             'Latin Modern Mono' with options
+(fontspec)             [Ligatures=TeX,Scale=MatchLowercase,WordSpace={1,0,0},Hy
+phenChar=None,PunctuationSpace=WordSpace].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999970497384594]"Latin Modern
+(fontspec)             Mono/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.9999970497384594]"Latin Modern
+(fontspec)             Mono/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.9999970497384594]"Latin Modern
+(fontspec)             Mono/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8225173566032745.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8225173566032745.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8225173566032745.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/B scale = 0.7981463428418034.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/B scale = 0.7981463428418034.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/I scale = 0.8225173566032745.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/I scale = 0.8225173566032745.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/BI scale = 0.7981463428418034.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/BI scale = 0.7981463428418034.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TeXGyreHeros(1)' created for font 'TeX
+(fontspec)             Gyre Heros' with options
+(fontspec)             [Ligatures=TeX,Scale=MatchLowercase].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.8225173566032745]"TeX Gyre
+(fontspec)             Heros/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[0.8225173566032745]"TeX Gyre
+(fontspec)             Heros/OT:script=latn;language=dflt;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.7981463428418034]"TeX Gyre
+(fontspec)             Heros/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[0.7981463428418034]"TeX Gyre
+(fontspec)             Heros/B/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.8225173566032745]"TeX Gyre
+(fontspec)             Heros/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[0.8225173566032745]"TeX Gyre
+(fontspec)             Heros/I/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.7981463428418034]"TeX Gyre
+(fontspec)             Heros/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[0.7981463428418034]"TeX Gyre
+(fontspec)             Heros/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+
+
+(c:/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(c:/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count296
+\Gm@cntv=\count297
+\c@Gm@tempcnt=\count298
+\Gm@bindingoffset=\dimen152
+\Gm@wd@mp=\dimen153
+\Gm@odd@mp=\dimen154
+\Gm@even@mp=\dimen155
+\Gm@layoutwidth=\dimen156
+\Gm@layoutheight=\dimen157
+\Gm@layouthoffset=\dimen158
+\Gm@layoutvoffset=\dimen159
+\Gm@dimlist=\toks18
+)
+(c:/texlive/2025/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+)
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
+)
+(c:/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen162
+\lightrulewidth=\dimen163
+\cmidrulewidth=\dimen164
+\belowrulesep=\dimen165
+\belowbottomsep=\dimen166
+\aboverulesep=\dimen167
+\abovetopsep=\dimen168
+\cmidrulesep=\dimen169
+\cmidrulekern=\dimen170
+\defaultaddspace=\dimen171
+\@cmidla=\count299
+\@cmidlb=\count300
+\@aboverulesep=\dimen172
+\@belowrulesep=\dimen173
+\@thisruleclass=\count301
+\@lastruleclass=\count302
+\@thisrulewidth=\dimen174
+)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip51
+\LTright=\skip52
+\LTpre=\skip53
+\LTpost=\skip54
+\LTchunksize=\count303
+\LTcapwidth=\dimen175
+\LT@head=\box53
+\LT@firsthead=\box54
+\LT@foot=\box55
+\LT@lastfoot=\box56
+\LT@gbox=\box57
+\LT@cols=\count304
+\LT@rows=\count305
+\c@LT@tables=\count306
+\c@LT@chunks=\count307
+\LT@p@ftn=\toks19
+)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen176
+\ar@mcellbox=\box58
+\extrarowheight=\dimen177
+\NC@list=\toks20
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box59
+)
+\TX@col@width=\dimen178
+\TX@old@table=\dimen179
+\TX@old@col=\dimen180
+\TX@target=\dimen181
+\TX@delta=\dimen182
+\TX@cols=\count308
+\TX@ftn=\toks21
+)
+(c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen183
+\captionmargin=\dimen184
+\caption@leftmargin=\dimen185
+\caption@rightmargin=\dimen186
+\caption@width=\dimen187
+\caption@indent=\dimen188
+\caption@parindent=\dimen189
+\caption@hangindent=\dimen190
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count309
+\c@continuedfloat=\count310
+Package caption Info: longtable package is loaded.
+
+(c:/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
+(c:/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count311
+\float@exts=\toks22
+\float@box=\box60
+\@float@everytoks=\toks23
+\@floatcapt=\box61
+)
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
+\MT@toks=\toks24
+\MT@tempbox=\box62
+\MT@count=\count312
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks25
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen191
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count313
+
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2025/07/09 v3.2b Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 443.
+LaTeX Info: Redefining \lslig on input line 451.
+\MT@outer@space=\skip57
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(c:/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box63
+\beforetitleunit=\skip58
+\aftertitleunit=\skip59
+\ttl@plus=\dimen192
+\ttl@minus=\dimen193
+\ttl@toksa=\toks26
+\titlewidth=\dimen194
+\titlewidthlast=\dimen195
+\titlewidthfirst=\dimen196
+)
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ^^Ii
+         tleformat{\chapter}[display]
+? 
+! Interruption.
+\__hook_code_gset_aux:nnn ..._hook_parameter:n {#2
+                                                  }}{#3}
+l.44 ^^Iitleformat{\chapter
+                           }[display]
+? powershell -NoProfile -Command "Get-Content -LiteralPath 'e:\haga\ferrari-rep
+ort\Ferrari_Economics_and_Marketing_Report.tex' -TotalCount 80 | Select-Object 
+-Skip 37 | Select-Object -First 35 | ForEach-Object { $_ }"
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? owershell -NoProfile -Command "$path='e:\haga\ferrarireport\Ferrari_Economics
+_and_Markeing_Report.tex'; $conent=Get-Content -Raw -LiteralPath $path; $conten
+t=$content -replace '(?m)^([ \t]*)itleformat', '$1\itleformat'; $content=$conte
+nt -replace '(?m)^([ \t]*)itlespacing\*', '$1\titlespacing*'; $content=$content
+ -replac '(?m)^([ \t]*)hispagestyl\b', '$1\thispagestyle'; $content=$contet -re
+place '(?m)^([ \t*)extbf\b', '$1\textbf'; $content=$content -replace '(?m)^([ \
+t]*)oprule\b', '$1\toprule'; Set-Content -LitealPath $path -Value $content -NoN
+ewlne -Encoding UTF8"
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? powershell -NoProfile -Command "$path='e:\haa\ferrari-report\Ferrari_Eonomics
+_and_Marketing_Report.tex'; $content=Get-Content -Raw -LiteraPath $path; $conte
+nt=$content -replace '(?m)^([ \t]*)itleformat', '$1\\titleformat'; $content=$co
+ntent -rplace '(?m)^([ \t]*)itlespacing\*', '$1\\tilespacing*'; $content=$conte
+nt -replace '(?m)^([ \t]*)hispagestye\b', '$1\\thispagestyle'; $content=$conten
+t -replace '(?m)^([ \t]*)extbf\b', '$1\\textf'; $content=$content -replace '(?m
+)^([ \t]*)oprule\b', '$1\\toprule'; Set-Content -LiteralPath $path -Value $cont
+ent -NoNewline -Encoding UTF8"
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? powershll -NoProfile -ExecutionPolicy Bypass -File "e:\haga\fix_tex.ps1"
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? powershell -NoProfile -Command "Get-Process latexmk,xelatex -ErrorAction Sile
+ntlyContinue | Stop-Process -Force"
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? xit
+ 
+Here is how much of TeX's memory you used:
+ 9095 strings out of 468178
+ 205592 string characters out of 5436862
+ 689288 words of memory out of 5000000
+ 37735 multiletter control sequences out of 15000+600000
+ 627953 words of font info for 69 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 73i,0n,116p,657b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.
