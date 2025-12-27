@@ -1,5 +1,5 @@
 ﻿% !TeX program = xelatex
-% XeLaTeX academic report template (Ferrari case study)
+% XeLaTeX academic report (Ferrari case study)
 
 \documentclass[12pt,a4paper]{report}
 
@@ -21,6 +21,7 @@
 \onehalfspacing
 \setlength{\parskip}{0.6em}
 \setlength{\parindent}{0pt}
+\raggedbottom
 
 % --- REQUIRED PACKAGES(sharaf) ---
 \usepackage{longtable} % <--- ADD THIS for the multi-page table
@@ -68,6 +69,7 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{microtype}
+\usepackage{enumitem}
 
 % ---------- Section styling (technical, minimal) ----------
 \usepackage{titlesec}
@@ -139,7 +141,7 @@
 }
 
 % ---------- Bibliography ----------
-\usepackage[backend=biber,style=authoryear,maxcitenames=2,maxbibnames=99]{biblatex}
+\usepackage[backend=biber,style=numeric,sorting=none,maxbibnames=99]{biblatex}
 \addbibresource{references.bib}
 
 % ---------- Front matter helpers ----------
@@ -149,11 +151,31 @@
 % ---------- Document metadata ----------
 \newcommand{\ReportTitle}{Economics and Marketing Analysis of Ferrari}
 \newcommand{\ReportSubtitle}{A Technical Economics and Marketing Report}
-\newcommand{\ReportAuthor}{[Your Name]}
-\newcommand{\ReportAffiliation}{[University Name]}
-\newcommand{\ReportCourse}{[Course Name]}
-\newcommand{\ReportInstructor}{[Instructor Name]}
+\newcommand{\ReportAuthor}{%
+Ahmed Raafat Salah (Sec. 1, BN 3)\\
+Ahmed Mohamed Mahmoud (Sec. 1, BN 6)\\
+Rania Hany Heider (Sec. 1, BN 22)\\
+Omar Mostafa Mahmoud (Sec. 2, BN 1)\\
+Ahmed Hesham Mohammed (Sec. 1, BN 9)\\
+Reem Osama Ahmed (Sec. 1, BN 24)\\
+Abdelrahman Ahmed Kotb Abdelaziz (Sec. 1, BN 32)\\
+Mohammed Abd Allah (Sec. 2, BN 20)\\
+Bassant Mahmoud (Sec. 1, BN 13)\\
+Mohammed Gamal Kassem (Sec. 2, BN 14)%
+}
+\newcommand{\ReportAuthorPdf}{Ahmed Raafat Salah; Ahmed Mohamed Mahmoud; Rania Hany Heider; Omar Mostafa Mahmoud; Ahmed Hesham Mohammed; Reem Osama Ahmed; Abdelrahman Ahmed Kotb Abdelaziz; Mohammed Abd Allah; Bassant Mahmoud; Mohammed Gamal Kassem}
+\newcommand{\ReportAffiliation}{Faculty of Engineering, Aerospace Department, Cairo University}
+\newcommand{\ReportCourse}{Economics and Marketing}
+\newcommand{\ReportInstructor}{Dr. Hossam Shahein}
 \newcommand{\ReportDate}{December 2025}
+
+% PDF metadata (Title/Author fields in the exported PDF)
+\hypersetup{
+  pdftitle={\ReportTitle},
+  pdfauthor={\ReportAuthorPdf},
+  pdfsubject={\ReportCourse},
+  pdfkeywords={Ferrari, economics, marketing, luxury, pricing, brand equity}
+}
 
 \begin{document}
 
@@ -162,7 +184,8 @@
 % ============================================================
 \begin{titlepage}
   	\thispagestyle{empty}
-\vspace*{2.2cm}
+\centering
+\vspace*{1.8cm}
 
 {\HeadingFont\bfseries\fontsize{26}{30}\selectfont\color{Charcoal}\ReportTitle\par}
 \vspace{0.35cm}
@@ -173,12 +196,12 @@
 
 \vspace{1.2cm}
 {\HeadingFont\small\color{Charcoal}
-\begin{tabular}{@{}ll@{}}
-  	\textbf{Author} & \ReportAuthor\\
-  	\textbf{Affiliation} & \ReportAffiliation\\
-  	\textbf{Course} & \ReportCourse\\
-  	\textbf{Instructor} & \ReportInstructor\\
-  	\textbf{Date} & \ReportDate\\
+\begin{tabular}{@{}p{0.22\textwidth}p{0.72\textwidth}@{}}
+        \textbf{Authors} & \parbox[t]{0.72\textwidth}{\ReportAuthor}\\
+        \textbf{Affiliation} & \ReportAffiliation\\
+        \textbf{Course} & \ReportCourse\\
+        \textbf{Instructor} & \ReportInstructor\\
+        \textbf{Date} & \ReportDate\\
 \end{tabular}}
 
 \vfill
@@ -205,8 +228,8 @@ This report presents an integrated economics and marketing analysis of Ferrari, 
 % ============================================================
 % Acknowledgements (optional)
 % ============================================================
-\chapter*{Acknowledgements}
-[Write short acknowledgements here, if required by your institution.]
+% \chapter*{Acknowledgements}
+% [Write short acknowledgements here, if required by your institution.]
 
 % ============================================================
 % Table of contents
@@ -251,14 +274,13 @@ The approach is qualitative and conceptual, combining:
 \end{itemize}
 
 \subsection{Limitations}
-This report does not rely on proprietary internal data. Quantitative claims (e.g., exact financials, production volumes, conversion rates) are avoided unless sourced from official disclosures. Where numerical analysis would typically be expected, the report provides structured placeholders for future insertion (tables/charts) and explains the logic and the type of data required.
+This report does not rely on proprietary internal data. Quantitative claims (e.g., exact financials, production volumes, conversion rates) are avoided unless sourced from official disclosures. Where numerical analysis would typically be expected, the report provides structured tables/charts for later insertion and explains the logic and the type of data required.
 
-% Placeholder
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{../team/1.1.jpg}
 %\FerrariPlaceholder{[Figure 1: Research Framework Linking Economics and Marketing Concepts to Ferrari]}
-\caption{Conceptual framework of the study (placeholder).}
+\caption{Conceptual framework of the study.}
 \end{figure}
 
 % ============================================================
@@ -295,23 +317,23 @@ Economics explains constraints and incentives (scarcity, pricing, costs, competi
 \centering
 \caption{Mapping of concepts to Ferrari-specific analysis.}
 \begin{tabularx}{0.95\textwidth}{@{}>{\raggedright\arraybackslash}p{0.26\textwidth}X@{}}
-\toprule
-\textbf{Concept} & \textbf{Ferrari-specific application}\\
- \midrule
-  Demand and utility & Analyze functional vs. symbolic utility; specifically the role of heritage and identity.\\
-        \addlinespace
-  Elasticity & Analyze price/income elasticity; specifically sensitivity to macro shocks among affluent segments.\\
-        \addlinespace
-  Cost structure & Analyze fixed vs. variable costs; specifically customization complexity, compliance, and R\&D.\\
-        \addlinespace
-  Market structure & Analyze differentiated luxury segment dynamics; specifically rivalry via innovation and brand.\\
-        \addlinespace
-  STP & Analyze segments (collectors, enthusiasts, aspirational followers) and targeting logic.\\
-        \addlinespace
-  Brand equity & Analyze heritage, racing credibility, scarcity management, and authenticity.\\
-        \addlinespace
-  Digital marketing & Analyze experience-led digital touchpoints, community, CRM, and personalization.\\
-        \bottomrule
+  	oprule
+  	extbf{Concept} & \textbf{Ferrari-specific application}\\
+\midrule
+Demand and utility & Analyze functional vs. symbolic utility; specifically the role of heritage and identity.\\
+\addlinespace
+Elasticity & Analyze price/income elasticity; specifically sensitivity to macro shocks among affluent segments.\\
+\addlinespace
+Cost structure & Analyze fixed vs. variable costs; specifically customization complexity, compliance, and R\&D.\\
+\addlinespace
+Market structure & Analyze differentiated luxury segment dynamics; specifically rivalry via innovation and brand.\\
+\addlinespace
+STP & Analyze segments (collectors, enthusiasts, aspirational followers) and targeting logic.\\
+\addlinespace
+Brand equity & Analyze heritage, racing credibility, scarcity management, and authenticity.\\
+\addlinespace
+Digital marketing & Analyze experience-led digital touchpoints, community, CRM, and personalization.\\
+\bottomrule
 \end{tabularx}
 \end{table}
 
@@ -357,7 +379,7 @@ Ferrari operates not only as a vehicle manufacturer but also as a luxury brand t
   \centering
   \includegraphics[width=0.8\textwidth]{../team/Ferrari_Business_Model_Overview.png}
 %\FerrariPlaceholder{[Figure 2: Ferrari Business Model Overview (Luxury + Performance + Experiences)]}
-\caption{Business model diagram placeholder.}
+\caption{Business model diagram.}
 \end{figure}
 
 % ============================================================
@@ -385,19 +407,36 @@ A simplified representation of Ferrari's structure can be described as:
 \begin{figure}[H]
   \includegraphics[width=0.8\textwidth]{../team/4.1.png}
 %\FerrariPlaceholder{[Figure 3: Ferrari Organizational Structure (High-Level Placeholder)]}
-\caption{Organizational structure placeholder .}
+\caption{Organizational structure.}
 \end{figure}
 
 \section{Management Hierarchy and Decision Rights}
 Ferrari's strategy likely requires balancing centralized brand control with regional market responsiveness. Many luxury firms centralize brand guidelines, pricing corridors, product narratives, and customer selection policies, while allowing local execution in events, partnerships, and communications subject to approval. This hierarchy protects consistency---a key driver of luxury brand equity.
 
-\begin{table}[H]
-\centering
-\caption{Illustrative decision-rights matrix for a luxury automotive firm.}
-\begin{tabularx}{0.95\textwidth}{@{}p{0.25\textwidth}p{0.28\textwidth}p{0.16\textwidth}X@{}}
-\toprule
-    extbf{Decision area} & \textbf{Likely owner} & \textbf{Centralization} & \textbf{Rationale}\\
+\small
+\begin{longtable}{@{}
+  >{\raggedright\arraybackslash}p{0.24\textwidth}
+  >{\raggedright\arraybackslash}p{0.26\textwidth}
+  >{\raggedright\arraybackslash}p{0.15\textwidth}
+  >{\raggedright\arraybackslash}p{0.30\textwidth}
+@{}}
+\caption{Illustrative decision-rights matrix for a luxury automotive firm.}\label{tab:decision_rights}\\
+  	\toprule
+  	\textbf{Decision area} & \textbf{Likely owner} & \textbf{Centralization} & \textbf{Rationale}\\
 \midrule
+\endfirsthead
+
+  	\toprule
+  	\textbf{Decision area} & \textbf{Likely owner} & \textbf{Centralization} & \textbf{Rationale}\\
+\midrule
+\endhead
+
+\bottomrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+
 Brand identity and visual guidelines & Corporate headquarters (Brand and Communications) & Highly centralized & Ensures global consistency, protects brand heritage, and preserves exclusivity, which is fundamental to luxury brand equity. \\
 
 Product portfolio and model volumes & Corporate headquarters (Top management and Product Strategy) & Highly centralized & Supports scarcity management, long-term brand value, and alignment with Ferrari’s innovation and performance strategy. \\
@@ -413,10 +452,8 @@ Digital content and online communication & Corporate digital and marketing teams
 Customer relationship management (CRM) policies & Corporate headquarters (Digital and Data) & Centralized governance & Ensures consistent data standards, personalization quality, and compliance with global data protection regulations. \\
 
 After-sales service standards & Corporate headquarters (After-sales and Quality) & Centralized standards, regional execution & Maintains service excellence and customer satisfaction while leveraging local dealer capabilities. \\
-
-\bottomrule
-\end{tabularx}
-\end{table}
+\end{longtable}
+\normalsize
 
 % ============================================================
 % Chapter 5
@@ -435,8 +472,8 @@ Ferrari's official website (see \parencite{ferrari_website}) functions as a glob
   \item \textbf{Corporate transparency:} sustainability, governance, investor materials \parencite{ferrari_corporate}.
 \end{itemize}
 
-\section{Website Evaluation Framework (Academic Template)}
-This section proposes a structured evaluation template. Students can apply it empirically by observing pages, features, and flows.
+\section{Website Evaluation Framework}
+This section proposes a structured evaluation framework. Students can apply it empirically by observing pages, features, and flows.
 
 \subsection{Content Quality and Brand Consistency}
 Evaluate narrative coherence, consistency of tone, and alignment with brand values. Luxury websites generally avoid excessive discount messaging and instead emphasize craftsmanship and heritage.
@@ -459,7 +496,7 @@ While conversion may not mean direct purchase, it may mean collecting qualified 
 \caption{Website audit checklist (to be completed by the researcher).}
 \begin{tabularx}{0.95\textwidth}{@{}p{0.34\textwidth}X@{}}
 \toprule
-\textbf{Dimension} & \textbf{Evaluation notes / evidence }\\
+      	\textbf{Dimension} & \textbf{Ferrari evidence and interpretation}\\
 \midrule
 Brand storytelling & Assessment of heritage narratives, racing references, and emotional storytelling. \\
 Product clarity & Evaluation of model information clarity, specifications, configurator usability, and comparisons. \\
@@ -474,7 +511,7 @@ Trust and credibility & Availability of corporate information, sustainability re
   \centering
   \includegraphics[width=0.8\textwidth]{../team/5.1.jpg}
 %\FerrariPlaceholder{[Figure 4: Screenshot Placeholder --- Ferrari Homepage UX Elements]}
-\caption{Website evidence placeholder .}
+\caption{Website evidence.}
 \end{figure}
 
 % ============================================================
@@ -597,7 +634,7 @@ To understand Ferrari's economic classification, one must compare its operating 
 % ============================================================
 % Chapter 7
 % ============================================================
-\section{The Economics of Artificial Scarcity}
+\chapter{The Economics of Artificial Scarcity}
 Ferrari’s marketing logic is grounded in the economic principle of \textbf{Artificial Scarcity}. By deliberately limiting production volumes (historically capping units sold per year despite rising demand), Ferrari shifts the supply curve leftward. This ensures that:
 
 \begin{enumerate}
@@ -819,18 +856,30 @@ Ferrari's targeting logic likely prioritizes clients who align with brand stewar
 \section{Positioning}
 Ferrari's positioning can be articulated as: an iconic luxury performance brand with authentic racing heritage, offering exceptional engineering and craftsmanship through scarce, highly desirable products and experiences.
 
-\begin{table}[H]
-\centering
-\caption{STP summary matrix (to be customized with evidence).}
-\begin{tabularx}{0.95\textwidth}{@{}p{0.18\textwidth}X@{}}
-\toprule
-\textbf{STP element} & \textbf{Ferrari case notes (write evidence-based statements)}\\
-\midrule
-Segmentation & [List segments and their needs, motivations, and constraints.]\\
-Targeting & [Which segments are prioritized and why; allocation/relationship logic.]\\
-Positioning & [Key differentiators; reason-to-believe; competitive frame of reference.]\\
-\bottomrule
-\end{tabularx}
+\begin{table}[htbp]
+    \centering
+    \caption{STP summary matrix}
+    \label{tab:stp_matrix}
+    \begin{tabularx}{\linewidth}{@{} l X @{}}
+        \toprule
+      	\textbf{STP element} & \textbf{Ferrari case notes (Evidence-based analysis)} \\
+        \midrule
+      	\textbf{Segmentation} & \textbf{Demographic:} High-income professionals, entrepreneurs, and ultra-high-net-worth individuals (UHNWIs). \newline
+      	\textbf{Psychographic \& Behavioral:}
+        \begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+            \item \textit{Collectors:} Motivated by rarity, heritage, and portfolio value.
+            \item \textit{Drivers/Enthusiasts:} Motivated by performance and driving experience.
+            \item \textit{Status Seekers:} Motivated by visible prestige and social signaling.
+            \item \textit{Brand Community:} Motivated by belonging, events, and relationships.
+  \end{itemize} \\
+        \addlinespace
+          	\textbf{Targeting} & \textbf{Priority:} Prioritizes clients who align with "brand stewardship," specifically long-term loyal owners, engaged community participants, and those valuing authenticity. \newline
+          	\textbf{Logic:} Strategy aims to maximize lifetime value while minimizing the risk of brand dilution. \\
+        \addlinespace
+          	\textbf{Positioning} & \textbf{Core Statement:} An iconic luxury performance brand with authentic racing heritage. \newline
+          	\textbf{Differentiators:} Offers exceptional engineering and craftsmanship through scarce, highly desirable products and experiences. \\
+        \bottomrule
+    \end{tabularx}
 \end{table}
 
 % ============================================================
@@ -865,10 +914,10 @@ Rivalry includes product innovation, brand storytelling, racing involvement, and
 \section{PESTEL Overview}
 \begin{table}[H]
 \centering
-\caption{PESTEL analysis for Ferrari (qualitative template).}
+\caption{PESTEL analysis for Ferrari (qualitative).}
 \begin{tabularx}{0.95\textwidth}{@{}p{0.12\textwidth}X@{}}
 \toprule
-\textbf{Factor} & \textbf{Key points for Ferrari (write bullet-style evidence)}\\
+  	\textbf{Dimension} & \textbf{Ferrari evidence and interpretation}\\
 \midrule
 Political & Trade policies, industrial regulation, and political stability in key luxury markets. \\
 Economic & Wealth effects among high-income consumers, currency fluctuations, and global economic cycles. \\
@@ -905,7 +954,7 @@ Luxury firms increasingly compete in an experience economy: consumers may value 
 \centering
 \includegraphics[width=0.8\textwidth]{../team/11.2.png}
 %\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure 9: Trend Map (Electrification, Software, Sustainability, Experience Economy)]\vspace{1.2cm}}}
-\caption{Market trend map placeholder.}
+\caption{Market trend map.}
 \end{figure}
 
 % ============================================================
@@ -938,10 +987,10 @@ Brand dilution occurs when brand meaning becomes less distinctive or less credib
 
 \begin{table}[H]
 \centering
-\caption{Brand equity diagnostic (template).}
+\caption{Brand equity diagnostic.}
 \begin{tabularx}{0.95\textwidth}{@{}p{0.24\textwidth}X@{}}
   \toprule
-  \textbf{Dimension} & \textbf{Ferrari evidence and interpretation (fill with sources/observations)}\\
+    \textbf{Dimension} & \textbf{Ferrari evidence and interpretation}\\
 \midrule
 Brand Awareness
 & Ferrari enjoys exceptionally high global brand awareness, supported by its iconic prancing horse logo, long-standing participation in Formula 1, and frequent cultural references in media and popular culture. The brand is instantly recognizable even among non-car consumers, reinforcing top-of-mind awareness. However, excessive exposure through licensing and merchandise may risk shifting awareness from exclusivity toward mass familiarity, potentially contributing to brand dilution. \\
@@ -1130,7 +1179,7 @@ The following proposals are presented as structured strategic initiatives.
 \subsection{Strategy 3: Sustainability as Engineering Excellence}
 \begin{itemize}[leftmargin=*]
   \item Frame sustainability as performance engineering and responsible innovation.
-  \item Provide transparent reporting and measurable initiatives (placeholders in Appendix).
+  \item Provide transparent reporting and measurable initiatives (see Appendix for details).
   \item Ensure marketing claims are evidence-based to protect credibility.
 \end{itemize}
 
@@ -1139,7 +1188,7 @@ The following proposals are presented as structured strategic initiatives.
 \caption{Strategic initiatives roadmap.}
 \begin{tabularx}{0.95\textwidth}{@{}p{0.22\textwidth}p{0.18\textwidth}X@{}}
 \toprule
-\textbf{Initiative} & \textbf{Time horizon} & \textbf{Key actions and success metrics (placeholder)}\\
+  	\textbf{Initiative} & \textbf{Time horizon} & \textbf{Key actions and success metrics}\\
 \midrule
 Digital clienteling & 6--18 months & \begin{itemize}
                     \item CRM integration
@@ -1273,18 +1322,19 @@ This report applied core economics and marketing concepts to Ferrari to explain 
 % References
 % ============================================================
 \cleardoublepage
+\nocite{*}
 \printbibliography
 
 % ============================================================
 % Appendices (adds depth and page count)
 % ============================================================
 \appendix
-\chapter{Appendix A: Expanded Marketing Mix (7Ps) for Ferrari (Template)}
+\chapter{Appendix A: Expanded Marketing Mix (7Ps) for Ferrari}
 \section{Product}
 Discuss core product layers: core benefit (performance/identity), actual product (vehicle design, specs), augmented product (services, warranty, events). Insert model-by-model comparative table.
 
 \section{Price}
-Discuss premium pricing, line pricing, psychological pricing in luxury, and allocation mechanisms. Include placeholders for elasticity analysis.
+Discuss premium pricing, line pricing, psychological pricing in luxury, and allocation mechanisms. Optionally add an elasticity analysis subsection if needed.
 
 \section{Place (Distribution)}
 Discuss selective distribution, dealership experience standards, geographic strategy, and channel governance.
@@ -1408,7 +1458,7 @@ Table B.1 below details the six stages of the Ferrari customer journey, mapping 
     \textbf{Risks:} Physical evidence mismatch (showroom quality); poor ceremony execution. \\ 
     \addlinespace[1.5em]
 
-    % --- ROW 5: OWNERSHIP ---
+  %--- ROW 5: OWNERSHIP ---
     \textbf{Ownership} & 
     Maintain performance and deepen the relationship via experiences. & 
     \begin{itemize}[leftmargin=*, nosep]
@@ -1639,7 +1689,7 @@ colormap([0.25 0.2 0.7; 1 1 0]);
 \label{fig:cost_structure}
 \end{figure}
 
-\chapter{Appendix D: Competitive Set and Positioning Map (Template)}
+\chapter{Appendix D: Competitive Set and Positioning Map}
 \section{Competitive Set Definition}
 Define the competitive set by price tier, performance benchmarks, heritage, and exclusivity. Include direct luxury performance rivals and adjacent lifestyle competitors.
 
@@ -1654,7 +1704,7 @@ Construct a 2D positioning map, for example:
 \centering
 \includegraphics[width=0.8\textwidth]{../team/d1.png}
 %\fbox{\parbox{0.9\textwidth}{\vspace{1.2cm}\centering [Figure A3: Perceptual Map Placeholder (Ferrari vs. Rivals)]\vspace{1.2cm}}}
-\caption{Perceptual map placeholder.}
+\caption{Perceptual map.}
 \end{figure}
 
 \chapter{Appendix E: Data Collection Plan (For Academic Rigor)}
@@ -1675,82 +1725,94 @@ Construct a 2D positioning map, for example:
 Ensure informed consent, anonymity, and careful treatment of personal data, consistent with academic policy and data protection law.
 
 \chapter{Appendix F: TOWS Matrix (From SWOT to Strategy)}
-The TOWS matrix translates SWOT observations into actionable strategies. This appendix is intentionally structured as a write-in template so that the report can be strengthened with evidence-based strategy statements and expanded into short paragraphs for submission.
+The TOWS matrix translates SWOT observations into actionable strategies.
 
-\begin{table}[H]
-\centering
-\caption{TOWS matrix template to translate SWOT into actions.}
-\begin{tabularx}{1\textwidth}{@{}p{0.14\textwidth}X X@{}}
-  \toprule
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{@{}
+  >{\raggedright\arraybackslash}p{0.14\textwidth}
+  >{\raggedright\arraybackslash}p{0.41\textwidth}
+  >{\raggedright\arraybackslash}p{0.41\textwidth}
+@{}}
+\caption{TOWS matrix (SWOT translated into strategies).}\label{tab:tows}\\
+  	\toprule
  & \textbf{Opportunities (O)} & \textbf{Threats (T)}\\
 \midrule
-  \textbf{Strengths (S)} & 
-                \textbf{SO Strategies (Strengths–Opportunities)} \newline 
-                Ferrari can effectively leverage its unparalleled brand reputation and racing-derived technological capabilities to capitalise on the transition toward hybrid and electric luxury mobility. The company’s proven ability to transfer innovations from Formula 1 to its road-going fleet allows it to meet stringent sustainability expectations while enhancing performance. \newline
-                Additionally, Ferrari can exploit the rising demand in emerging luxury markets by offering highly exclusive, limited-edition models and bespoke personalisation options. This ensures geographical expansion and revenue growth without compromising the brand’s core strategy of engineered scarcity. & 
-                \textbf{ST Strategies (Strengths–Threats)} \newline 
-                Ferrari’s exceptional brand loyalty and substantial pricing power serve as a buffer against external threats like shifting environmental regulations and intensified competition. By maintaining its lead in powertrain efficiency and alternative energy research, the firm remains a proactive pioneer rather than a reactive follower in the face of legal mandates. \newline
-                Simultaneously, the brand’s focus on artisanal craftsmanship and heritage protects it from price wars. Unlike mass-market luxury manufacturers, Ferrari’s low-volume model reduces financial exposure to global economic downturns and aggressive rival positioning. \tabularnewline
-                \hline
-                
-                \textbf{Weaknesses (W)} & 
-                \textbf{WO Strategies (Weaknesses–Opportunities)} \newline 
-                The challenges of high production costs and limited industrial scalability can be mitigated by integrating advanced digital ecosystems and customer data analytics. Enhanced digital engagement can refine demand forecasting and relationship management, leading to leaner production processes and reduced operational overhead. \newline
-                Furthermore, Ferrari can address its internal R\&D limitations in specific electrification domains by establishing selective, high-level partnerships with specialist technology firms. This allows for rapid innovation and access to cutting-edge expertise while protecting the firm’s capital and focusing on its core design DNA. & 
-                \textbf{WT Strategies (Weaknesses–Threats)} \newline 
-                To defend against combined internal vulnerabilities and external market threats, Ferrari must maintain a rigorous and cautious strategic posture. Tight control over licensing and brand extensions is vital to prevent brand dilution and ensure that every collaboration reinforces Ferrari’s premium standing. \newline
-                Moreover, strict financial discipline coupled with highly flexible production planning allows the company to navigate economic volatility. By keeping supply intentionally below market demand, Ferrari preserves its long-term brand equity and limits financial risk during periods of global market instability. \tabularnewline
-                \hline\\
-\bottomrule
-\end{tabularx}
-\end{table}
+\endfirsthead
 
-\chapter{Appendix G: Figures and Tables Submission Index (Checklist)}
-This appendix provides a structured index of placeholders used in this report. It can be used as a submission checklist to ensure that required visual evidence (screenshots, organization charts, positioning maps, etc.) is added later if permitted.
-
-\section{Figure Placeholders}
-\begin{longtable}{@{}p{0.16\textwidth}p{0.76\textwidth}@{}}
-  \toprule
-  \textbf{ID} & \textbf{Placeholder description}\\
+      	\toprule
+ & \textbf{Opportunities (O)} & \textbf{Threats (T)}\\
 \midrule
-Figure 1 & Research framework linking economics and marketing to Ferrari\\
-Figure 2 & Ferrari business model overview (luxury + performance + experiences)\\
-Figure 3 & Ferrari organizational structure (high-level)\\
-Figure 4 & Ferrari website UX evidence placeholder\\
-Figure 5 & IMC map (paid/owned/earned media)\\
-Figure 6 & Pricing architecture ladder\\
-Figure 7 & Porter five forces diagram\\
-Figure 8 & SWOT matrix\\
-Figure 9 & Trend map (electrification, software, sustainability, experience economy)\\
-Figure 10 & Brand equity pyramid\\
-Figure 11 & Marketing mix system map\\
-Figure A1 & Customer journey diagram\\
-Figure A2 & Cost structure chart\\
-Figure A3 & Perceptual/positioning map\\
-\bottomrule
-\end{longtable}
+\endhead
 
-\section{Table Placeholders}
-\begin{longtable}{@{}p{0.16\textwidth}p{0.76\textwidth}@{}}
-  \toprule
-  \textbf{ID} & \textbf{Placeholder description}\\
-\midrule
-Table 1 & Mapping of concepts to Ferrari analysis\\
-Table 2 & Decision-rights matrix for luxury governance\\
-Table 3 & Website audit checklist\\
-Table 4 & Ferrari offering portfolio classification\\
-Table 5 & Digital KPIs template\\
-Table 6 & STP summary matrix\\
-Table 7 & PESTEL template\\
-Table 8 & Economic principles summary\\
-Table 9 & Strategic initiatives roadmap\\
-Table 10 & Brand equity diagnostic template\\
-Table 11 & Balanced scorecard template\\
-Table 12 & Risk register template\\
-Table A1 & 7Ps worksheet\\
-Table B1 & Customer journey touchpoints table\\
-Table F1 & TOWS matrix template\\
 \bottomrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+        \textbf{Strengths (S)} & \textbf{SO Strategies} & \textbf{ST Strategies}\\
+ & Ferrari can leverage its brand reputation and racing-derived capabilities to capitalise on hybrid and electric luxury mobility. Transfer of Formula 1 innovations to road cars helps meet stringent sustainability expectations while enhancing performance. Additionally, Ferrari can target emerging luxury markets with exclusive, limited-edition models and bespoke personalisation to grow revenue without compromising engineered scarcity.
+ & Ferrari’s loyalty and pricing power buffer external threats such as environmental regulation and intensified competition. By maintaining leadership in powertrain efficiency and alternative-energy research, the firm stays proactive in the face of mandates. Simultaneously, artisanal craftsmanship and heritage protect the brand from price wars and reduce exposure to macroeconomic downturns.\\
+
+\addlinespace[0.8em]
+        \textbf{Weaknesses (W)} & \textbf{WO Strategies} & \textbf{WT Strategies}\\
+ & High production costs and limited scalability can be mitigated by integrating digital ecosystems and customer data analytics. Better digital engagement supports demand forecasting and relationship management, reducing operational overhead. Ferrari can also address R\&D gaps in electrification via selective partnerships with specialist technology firms while protecting its design DNA.
+ & To defend against combined internal vulnerabilities and external threats, Ferrari should maintain strict control over licensing and brand extensions to prevent dilution and ensure collaborations reinforce premium standing. Financial discipline and flexible production planning help navigate volatility; keeping supply intentionally below demand preserves brand equity and limits financial risk.\\
 \end{longtable}
+\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{6pt}
+\normalsize
+
+% \chapter{Appendix G: Figures and Tables Submission Index (Checklist)}
+% This appendix provides a structured checklist of figures and tables in this report.
+
+% \section{Figures}
+% \begin{longtable}{@{}p{0.16\textwidth}p{0.76\textwidth}@{}}
+%   \toprule
+%   	\textbf{ID} & \textbf{Description}\\
+% \midrule
+% Figure 1 & Research framework linking economics and marketing to Ferrari\\
+% Figure 2 & Ferrari business model overview (luxury + performance + experiences)\\
+% Figure 3 & Ferrari organizational structure (high-level)\\
+% Figure 4 & Ferrari website UX evidence\\
+% Figure 5 & IMC map (paid/owned/earned media)\\
+% Figure 6 & Pricing architecture ladder\\
+% Figure 7 & Porter five forces diagram\\
+% Figure 8 & SWOT matrix\\
+% Figure 9 & Trend map (electrification, software, sustainability, experience economy)\\
+% Figure 10 & Brand equity pyramid\\
+% Figure 11 & Marketing mix system map\\
+% Figure A1 & Customer journey diagram\\
+% Figure A2 & Cost structure chart\\
+% Figure A3 & Perceptual/positioning map\\
+% \bottomrule
+% \end{longtable}
+
+% \section{Tables}
+% \begin{longtable}{@{}p{0.16\textwidth}p{0.76\textwidth}@{}}
+%   \toprule
+%   	\textbf{ID} & \textbf{Description}\\
+% \midrule
+% Table 1 & Mapping of concepts to Ferrari analysis\\
+% Table 2 & Decision-rights matrix for luxury governance\\
+% Table 3 & Website audit checklist\\
+% Table 4 & Ferrari offering portfolio classification\\
+% Table 5 & Digital KPIs\\
+% Table 6 & STP summary matrix\\
+% Table 7 & PESTEL analysis\\
+% Table 8 & Economic principles summary\\
+% Table 9 & Strategic initiatives roadmap\\
+% Table 10 & Brand equity diagnostic\\
+% Table 11 & Balanced scorecard\\
+% Table 12 & Risk register\\
+% Table A1 & 7Ps worksheet\\
+% Table B1 & Customer journey touchpoints table\\
+% Table F1 & TOWS matrix\\
+% \bottomrule
+% \end{longtable}
 
 \end{document}
+
+

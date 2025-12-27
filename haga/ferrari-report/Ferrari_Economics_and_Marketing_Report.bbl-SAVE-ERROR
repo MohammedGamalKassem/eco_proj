@@ -18,15 +18,127 @@
 
 
 \refsection{0}
-  \datalist[entry]{nyt/global//global/global/global}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{kotlerkeller2016}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=68992773d1a840399049c9a31388c032}{%
+           family={Kotler},
+           familyi={K\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6d980ed30f2f84f3da5c4c9f1b5ec537}{%
+           family={Keller},
+           familyi={K\bibinitperiod},
+           given={Kevin\bibnamedelima Lane},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{fullhash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{fullhashraw}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{bibnamehash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{authorbibnamehash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{authornamehash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{authorfullhash}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \strng{authorfullhashraw}{e4bc457d9431d9b4acfa6b223e91a5da}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{15}
+      \field{title}{Marketing Management}
+      \field{year}{2016}
+    \endentry
+    \entry{porter1980}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=00fccab37644f65d2479dd0b102db192}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Michael\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Free Press}%
+      }
+      \strng{namehash}{00fccab37644f65d2479dd0b102db192}
+      \strng{fullhash}{00fccab37644f65d2479dd0b102db192}
+      \strng{fullhashraw}{00fccab37644f65d2479dd0b102db192}
+      \strng{bibnamehash}{00fccab37644f65d2479dd0b102db192}
+      \strng{authorbibnamehash}{00fccab37644f65d2479dd0b102db192}
+      \strng{authornamehash}{00fccab37644f65d2479dd0b102db192}
+      \strng{authorfullhash}{00fccab37644f65d2479dd0b102db192}
+      \strng{authorfullhashraw}{00fccab37644f65d2479dd0b102db192}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Competitive Strategy: Techniques for Analyzing Industries and Competitors}
+      \field{year}{1980}
+    \endentry
+    \entry{varian2014}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=affde3c8d511e90b7126c60a56e7ab49}{%
+           family={Varian},
+           familyi={V\bibinitperiod},
+           given={Hal\bibnamedelima R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {W. W. Norton}%
+      }
+      \strng{namehash}{affde3c8d511e90b7126c60a56e7ab49}
+      \strng{fullhash}{affde3c8d511e90b7126c60a56e7ab49}
+      \strng{fullhashraw}{affde3c8d511e90b7126c60a56e7ab49}
+      \strng{bibnamehash}{affde3c8d511e90b7126c60a56e7ab49}
+      \strng{authorbibnamehash}{affde3c8d511e90b7126c60a56e7ab49}
+      \strng{authornamehash}{affde3c8d511e90b7126c60a56e7ab49}
+      \strng{authorfullhash}{affde3c8d511e90b7126c60a56e7ab49}
+      \strng{authorfullhashraw}{affde3c8d511e90b7126c60a56e7ab49}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{9}
+      \field{title}{Intermediate Microeconomics: A Modern Approach}
+      \field{year}{2014}
+    \endentry
+    \entry{porter1985}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=00fccab37644f65d2479dd0b102db192}{%
+           family={Porter},
+           familyi={P\bibinitperiod},
+           given={Michael\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Free Press}%
+      }
+      \strng{namehash}{00fccab37644f65d2479dd0b102db192}
+      \strng{fullhash}{00fccab37644f65d2479dd0b102db192}
+      \strng{fullhashraw}{00fccab37644f65d2479dd0b102db192}
+      \strng{bibnamehash}{00fccab37644f65d2479dd0b102db192}
+      \strng{authorbibnamehash}{00fccab37644f65d2479dd0b102db192}
+      \strng{authornamehash}{00fccab37644f65d2479dd0b102db192}
+      \strng{authorfullhash}{00fccab37644f65d2479dd0b102db192}
+      \strng{authorfullhashraw}{00fccab37644f65d2479dd0b102db192}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Competitive Advantage: Creating and Sustaining Superior Performance}
+      \field{year}{1985}
+    \endentry
     \entry{aaker1996}{book}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=902b66117ed261c7a0566b570ab76087}{%
+        {{hash=902b66117ed261c7a0566b570ab76087}{%
            family={Aaker},
            familyi={A\bibinitperiod},
            given={David\bibnamedelima A.},
-           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Free Press}%
@@ -39,18 +151,42 @@
       \strng{authornamehash}{902b66117ed261c7a0566b570ab76087}
       \strng{authorfullhash}{902b66117ed261c7a0566b570ab76087}
       \strng{authorfullhashraw}{902b66117ed261c7a0566b570ab76087}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Building Strong Brands}
       \field{year}{1996}
     \endentry
+    \entry{kapferer2012}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=d4ef8a4ed21abb6edc21eca9e0c19386}{%
+           family={Kapferer},
+           familyi={K\bibinitperiod},
+           given={Jean-No{"e}l},
+           giveni={J\bibinithyphendelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Kogan Page}%
+      }
+      \strng{namehash}{d4ef8a4ed21abb6edc21eca9e0c19386}
+      \strng{fullhash}{d4ef8a4ed21abb6edc21eca9e0c19386}
+      \strng{fullhashraw}{d4ef8a4ed21abb6edc21eca9e0c19386}
+      \strng{bibnamehash}{d4ef8a4ed21abb6edc21eca9e0c19386}
+      \strng{authorbibnamehash}{d4ef8a4ed21abb6edc21eca9e0c19386}
+      \strng{authornamehash}{d4ef8a4ed21abb6edc21eca9e0c19386}
+      \strng{authorfullhash}{d4ef8a4ed21abb6edc21eca9e0c19386}
+      \strng{authorfullhashraw}{d4ef8a4ed21abb6edc21eca9e0c19386}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The New Strategic Brand Management}
+      \field{year}{2012}
+    \endentry
     \entry{ferrari_corporate}{online}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f5e55a825a1baeed8f4b929c49737077}{%
+        {{hash=f5e55a825a1baeed8f4b929c49737077}{%
            family={{Ferrari N.V.}},
            familyi={F\bibinitperiod}}}%
       }
@@ -63,11 +199,8 @@
       \strng{authorfullhash}{f5e55a825a1baeed8f4b929c49737077}
       \strng{authorfullhashraw}{f5e55a825a1baeed8f4b929c49737077}
       \field{extraname}{1}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{url}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed 19 Dec 2025}
@@ -85,7 +218,7 @@
     \endentry
     \entry{ferrari_website}{online}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=f5e55a825a1baeed8f4b929c49737077}{%
+        {{hash=f5e55a825a1baeed8f4b929c49737077}{%
            family={{Ferrari N.V.}},
            familyi={F\bibinitperiod}}}%
       }
@@ -98,11 +231,8 @@
       \strng{authorfullhash}{f5e55a825a1baeed8f4b929c49737077}
       \strng{authorfullhashraw}{f5e55a825a1baeed8f4b929c49737077}
       \field{extraname}{2}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{url}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed 19 Dec 2025}
@@ -118,160 +248,312 @@
       \verb https://www.ferrari.com/
       \endverb
     \endentry
-    \entry{kapferer2012}{book}{}{}
+    \entry{mankiw2021}{book}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d4ef8a4ed21abb6edc21eca9e0c19386}{%
-           family={Kapferer},
-           familyi={K\bibinitperiod},
-           given={Jean-No{"e}l},
-           giveni={J\bibinithyphendelim N\bibinitperiod},
-           givenun=0}}%
+        {{hash=474cb51282bc298228df113afdfd755f}{%
+           family={Mankiw},
+           familyi={M\bibinitperiod},
+           given={N.\bibnamedelimi Gregory},
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Kogan Page}%
+        {Cengage Learning}%
       }
-      \strng{namehash}{d4ef8a4ed21abb6edc21eca9e0c19386}
-      \strng{fullhash}{d4ef8a4ed21abb6edc21eca9e0c19386}
-      \strng{fullhashraw}{d4ef8a4ed21abb6edc21eca9e0c19386}
-      \strng{bibnamehash}{d4ef8a4ed21abb6edc21eca9e0c19386}
-      \strng{authorbibnamehash}{d4ef8a4ed21abb6edc21eca9e0c19386}
-      \strng{authornamehash}{d4ef8a4ed21abb6edc21eca9e0c19386}
-      \strng{authorfullhash}{d4ef8a4ed21abb6edc21eca9e0c19386}
-      \strng{authorfullhashraw}{d4ef8a4ed21abb6edc21eca9e0c19386}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{The New Strategic Brand Management}
-      \field{year}{2012}
-    \endentry
-    \entry{kotlerkeller2016}{book}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=68992773d1a840399049c9a31388c032}{%
-           family={Kotler},
-           familyi={K\bibinitperiod},
-           given={Philip},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6d980ed30f2f84f3da5c4c9f1b5ec537}{%
-           family={Keller},
-           familyi={K\bibinitperiod},
-           given={Kevin\bibnamedelima Lane},
-           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Pearson}%
-      }
-      \strng{namehash}{e4bc457d9431d9b4acfa6b223e91a5da}
-      \strng{fullhash}{e4bc457d9431d9b4acfa6b223e91a5da}
-      \strng{fullhashraw}{e4bc457d9431d9b4acfa6b223e91a5da}
-      \strng{bibnamehash}{e4bc457d9431d9b4acfa6b223e91a5da}
-      \strng{authorbibnamehash}{e4bc457d9431d9b4acfa6b223e91a5da}
-      \strng{authornamehash}{e4bc457d9431d9b4acfa6b223e91a5da}
-      \strng{authorfullhash}{e4bc457d9431d9b4acfa6b223e91a5da}
-      \strng{authorfullhashraw}{e4bc457d9431d9b4acfa6b223e91a5da}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{15}
-      \field{title}{Marketing Management}
-      \field{year}{2016}
-    \endentry
-    \entry{porter1980}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=00fccab37644f65d2479dd0b102db192}{%
-           family={Porter},
-           familyi={P\bibinitperiod},
-           given={Michael\bibnamedelima E.},
-           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Free Press}%
-      }
-      \strng{namehash}{00fccab37644f65d2479dd0b102db192}
-      \strng{fullhash}{00fccab37644f65d2479dd0b102db192}
-      \strng{fullhashraw}{00fccab37644f65d2479dd0b102db192}
-      \strng{bibnamehash}{00fccab37644f65d2479dd0b102db192}
-      \strng{authorbibnamehash}{00fccab37644f65d2479dd0b102db192}
-      \strng{authornamehash}{00fccab37644f65d2479dd0b102db192}
-      \strng{authorfullhash}{00fccab37644f65d2479dd0b102db192}
-      \strng{authorfullhashraw}{00fccab37644f65d2479dd0b102db192}
-      \field{extraname}{1}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Competitive Strategy: Techniques for Analyzing Industries and Competitors}
-      \field{year}{1980}
-    \endentry
-    \entry{porter1985}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=00fccab37644f65d2479dd0b102db192}{%
-           family={Porter},
-           familyi={P\bibinitperiod},
-           given={Michael\bibnamedelima E.},
-           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Free Press}%
-      }
-      \strng{namehash}{00fccab37644f65d2479dd0b102db192}
-      \strng{fullhash}{00fccab37644f65d2479dd0b102db192}
-      \strng{fullhashraw}{00fccab37644f65d2479dd0b102db192}
-      \strng{bibnamehash}{00fccab37644f65d2479dd0b102db192}
-      \strng{authorbibnamehash}{00fccab37644f65d2479dd0b102db192}
-      \strng{authornamehash}{00fccab37644f65d2479dd0b102db192}
-      \strng{authorfullhash}{00fccab37644f65d2479dd0b102db192}
-      \strng{authorfullhashraw}{00fccab37644f65d2479dd0b102db192}
-      \field{extraname}{2}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Competitive Advantage: Creating and Sustaining Superior Performance}
-      \field{year}{1985}
-    \endentry
-    \entry{varian2014}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=affde3c8d511e90b7126c60a56e7ab49}{%
-           family={Varian},
-           familyi={V\bibinitperiod},
-           given={Hal\bibnamedelima R.},
-           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {W. W. Norton}%
-      }
-      \strng{namehash}{affde3c8d511e90b7126c60a56e7ab49}
-      \strng{fullhash}{affde3c8d511e90b7126c60a56e7ab49}
-      \strng{fullhashraw}{affde3c8d511e90b7126c60a56e7ab49}
-      \strng{bibnamehash}{affde3c8d511e90b7126c60a56e7ab49}
-      \strng{authorbibnamehash}{affde3c8d511e90b7126c60a56e7ab49}
-      \strng{authornamehash}{affde3c8d511e90b7126c60a56e7ab49}
-      \strng{authorfullhash}{affde3c8d511e90b7126c60a56e7ab49}
-      \strng{authorfullhashraw}{affde3c8d511e90b7126c60a56e7ab49}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \strng{namehash}{474cb51282bc298228df113afdfd755f}
+      \strng{fullhash}{474cb51282bc298228df113afdfd755f}
+      \strng{fullhashraw}{474cb51282bc298228df113afdfd755f}
+      \strng{bibnamehash}{474cb51282bc298228df113afdfd755f}
+      \strng{authorbibnamehash}{474cb51282bc298228df113afdfd755f}
+      \strng{authornamehash}{474cb51282bc298228df113afdfd755f}
+      \strng{authorfullhash}{474cb51282bc298228df113afdfd755f}
+      \strng{authorfullhashraw}{474cb51282bc298228df113afdfd755f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{9}
-      \field{title}{Intermediate Microeconomics: A Modern Approach}
-      \field{year}{2014}
+      \field{title}{Principles of Economics}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{chevaliermazzalovo2021}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=4a9d2f42224a38dd7bd5464648ef467a}{%
+           family={Chevalier},
+           familyi={C\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8d5aa42ba72de080e455282a83194ae0}{%
+           family={Mazzalovo},
+           familyi={M\bibinitperiod},
+           given={Gérald},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{6e38217d717e81504014507d34954952}
+      \strng{fullhash}{6e38217d717e81504014507d34954952}
+      \strng{fullhashraw}{6e38217d717e81504014507d34954952}
+      \strng{bibnamehash}{6e38217d717e81504014507d34954952}
+      \strng{authorbibnamehash}{6e38217d717e81504014507d34954952}
+      \strng{authornamehash}{6e38217d717e81504014507d34954952}
+      \strng{authorfullhash}{6e38217d717e81504014507d34954952}
+      \strng{authorfullhashraw}{6e38217d717e81504014507d34954952}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{title}{Luxury Brand Management in Digital and Sustainable Times}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{olsanova2025}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=4934d8226069835b20907650577375a3}{%
+           family={Olsanova},
+           familyi={O\bibinitperiod},
+           given={Katerina},
+           giveni={K\bibinitperiod}}}%
+        {{hash=d8bcfd447d36d8cae8b972183694e02d}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c6b05147e5662862d4e31b00c7f9be74}{%
+           family={Zlatic},
+           familyi={Z\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{917ec1351816d06cef9a68c861dd0e4b}
+      \strng{fullhash}{917ec1351816d06cef9a68c861dd0e4b}
+      \strng{fullhashraw}{917ec1351816d06cef9a68c861dd0e4b}
+      \strng{bibnamehash}{917ec1351816d06cef9a68c861dd0e4b}
+      \strng{authorbibnamehash}{917ec1351816d06cef9a68c861dd0e4b}
+      \strng{authornamehash}{917ec1351816d06cef9a68c861dd0e4b}
+      \strng{authorfullhash}{917ec1351816d06cef9a68c861dd0e4b}
+      \strng{authorfullhashraw}{917ec1351816d06cef9a68c861dd0e4b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Luxury Marketing and Brand Strategy: Theory and Practice for a Changing World}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{waluya2025ferrari}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=d27fd6830ad25b158148fb9b836c7626}{%
+           family={Waluya},
+           familyi={W\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a53b43e89b6b47bf6fc5b85138677a0}
+      \strng{fullhash}{2a53b43e89b6b47bf6fc5b85138677a0}
+      \strng{fullhashraw}{2a53b43e89b6b47bf6fc5b85138677a0}
+      \strng{bibnamehash}{2a53b43e89b6b47bf6fc5b85138677a0}
+      \strng{authorbibnamehash}{2a53b43e89b6b47bf6fc5b85138677a0}
+      \strng{authornamehash}{2a53b43e89b6b47bf6fc5b85138677a0}
+      \strng{authorfullhash}{2a53b43e89b6b47bf6fc5b85138677a0}
+      \strng{authorfullhashraw}{2a53b43e89b6b47bf6fc5b85138677a0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal for Multidisciplinary Research (IJFMR)}
+      \field{number}{4}
+      \field{title}{Ferrari S.p.A.: A Comprehensive Study of Strategy and Market Position}
+      \field{volume}{7}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{zhang2024investment}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f26f664835ac6c347db22001b657f1a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Warwick Evans Publishing}%
+      }
+      \strng{namehash}{1f26f664835ac6c347db22001b657f1a}
+      \strng{fullhash}{1f26f664835ac6c347db22001b657f1a}
+      \strng{fullhashraw}{1f26f664835ac6c347db22001b657f1a}
+      \strng{bibnamehash}{1f26f664835ac6c347db22001b657f1a}
+      \strng{authorbibnamehash}{1f26f664835ac6c347db22001b657f1a}
+      \strng{authornamehash}{1f26f664835ac6c347db22001b657f1a}
+      \strng{authorfullhash}{1f26f664835ac6c347db22001b657f1a}
+      \strng{authorfullhashraw}{1f26f664835ac6c347db22001b657f1a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transactions on Economics, Business and Management Research}
+      \field{title}{Investment Analysis of Ferrari S.p.A.}
+      \field{volume}{3831}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{dbs2025ferrari}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=689196937298eb62f7f44c9e032117b3}{%
+           family={{DBS Group Research}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {DBS Bank}%
+      }
+      \strng{namehash}{689196937298eb62f7f44c9e032117b3}
+      \strng{fullhash}{689196937298eb62f7f44c9e032117b3}
+      \strng{fullhashraw}{689196937298eb62f7f44c9e032117b3}
+      \strng{bibnamehash}{689196937298eb62f7f44c9e032117b3}
+      \strng{authorbibnamehash}{689196937298eb62f7f44c9e032117b3}
+      \strng{authornamehash}{689196937298eb62f7f44c9e032117b3}
+      \strng{authorfullhash}{689196937298eb62f7f44c9e032117b3}
+      \strng{authorfullhashraw}{689196937298eb62f7f44c9e032117b3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ferrari N.V.: Equity Research Report -- Margins and Order Book Resilience}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{investec2025scarcity}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=175a9b81c2d786c654fa5de57b95541e}{%
+           family={{Investec Wealth \& Investment}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Investec Wealth \& Investment}%
+      }
+      \strng{namehash}{175a9b81c2d786c654fa5de57b95541e}
+      \strng{fullhash}{175a9b81c2d786c654fa5de57b95541e}
+      \strng{fullhashraw}{175a9b81c2d786c654fa5de57b95541e}
+      \strng{bibnamehash}{175a9b81c2d786c654fa5de57b95541e}
+      \strng{authorbibnamehash}{175a9b81c2d786c654fa5de57b95541e}
+      \strng{authornamehash}{175a9b81c2d786c654fa5de57b95541e}
+      \strng{authorfullhash}{175a9b81c2d786c654fa5de57b95541e}
+      \strng{authorfullhashraw}{175a9b81c2d786c654fa5de57b95541e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ferrari: A Case Study in Managing Scarcity}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{mitsloan2025ferrari}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=11f0b0ce2287ed785e463d0dbc68a49d}{%
+           family={{MIT Sloan School of Management}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {MIT Sloan School of Management}%
+      }
+      \strng{namehash}{11f0b0ce2287ed785e463d0dbc68a49d}
+      \strng{fullhash}{11f0b0ce2287ed785e463d0dbc68a49d}
+      \strng{fullhashraw}{11f0b0ce2287ed785e463d0dbc68a49d}
+      \strng{bibnamehash}{11f0b0ce2287ed785e463d0dbc68a49d}
+      \strng{authorbibnamehash}{11f0b0ce2287ed785e463d0dbc68a49d}
+      \strng{authornamehash}{11f0b0ce2287ed785e463d0dbc68a49d}
+      \strng{authorfullhash}{11f0b0ce2287ed785e463d0dbc68a49d}
+      \strng{authorfullhashraw}{11f0b0ce2287ed785e463d0dbc68a49d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ferrari in 2025: Balancing Tradition and Innovation to Grow}
+      \field{type}{Case study}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{quartr2024pricingpower}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=8bb8ee0ecf2d45ba08308dc7ed2ef00b}{%
+           family={{Quartr}},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Quartr Insights}%
+      }
+      \strng{namehash}{8bb8ee0ecf2d45ba08308dc7ed2ef00b}
+      \strng{fullhash}{8bb8ee0ecf2d45ba08308dc7ed2ef00b}
+      \strng{fullhashraw}{8bb8ee0ecf2d45ba08308dc7ed2ef00b}
+      \strng{bibnamehash}{8bb8ee0ecf2d45ba08308dc7ed2ef00b}
+      \strng{authorbibnamehash}{8bb8ee0ecf2d45ba08308dc7ed2ef00b}
+      \strng{authornamehash}{8bb8ee0ecf2d45ba08308dc7ed2ef00b}
+      \strng{authorfullhash}{8bb8ee0ecf2d45ba08308dc7ed2ef00b}
+      \strng{authorfullhashraw}{8bb8ee0ecf2d45ba08308dc7ed2ef00b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pricing Power Through Scarcity: A Case Study of Ferrari}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{bernstein2024ferrari}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=918b82407df01d9a0112ec269f103889}{%
+           family={{Bernstein Research}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Sanford C. Bernstein \& Co.}%
+      }
+      \strng{namehash}{918b82407df01d9a0112ec269f103889}
+      \strng{fullhash}{918b82407df01d9a0112ec269f103889}
+      \strng{fullhashraw}{918b82407df01d9a0112ec269f103889}
+      \strng{bibnamehash}{918b82407df01d9a0112ec269f103889}
+      \strng{authorbibnamehash}{918b82407df01d9a0112ec269f103889}
+      \strng{authornamehash}{918b82407df01d9a0112ec269f103889}
+      \strng{authorfullhash}{918b82407df01d9a0112ec269f103889}
+      \strng{authorfullhashraw}{918b82407df01d9a0112ec269f103889}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Luxury Goods: The Ferrari Exception}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{interbrand2024automotive}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=f9af6d9c30de70bed6e1371ee2871afd}{%
+           family={{Interbrand}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Interbrand}%
+      }
+      \strng{namehash}{f9af6d9c30de70bed6e1371ee2871afd}
+      \strng{fullhash}{f9af6d9c30de70bed6e1371ee2871afd}
+      \strng{fullhashraw}{f9af6d9c30de70bed6e1371ee2871afd}
+      \strng{bibnamehash}{f9af6d9c30de70bed6e1371ee2871afd}
+      \strng{authorbibnamehash}{f9af6d9c30de70bed6e1371ee2871afd}
+      \strng{authornamehash}{f9af6d9c30de70bed6e1371ee2871afd}
+      \strng{authorfullhash}{f9af6d9c30de70bed6e1371ee2871afd}
+      \strng{authorfullhashraw}{f9af6d9c30de70bed6e1371ee2871afd}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Best Global Brands 2024: Automotive Sector Report}
+      \field{year}{2024}
+      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection
